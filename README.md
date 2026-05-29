@@ -1,0 +1,65 @@
+# LinClean Eval Reports
+
+LinClean FastAPI URL 보안 엔진의 날짜별 평가 결과 저장소입니다. 각 날짜 디렉터리는 같은 구조를 유지합니다.
+
+```text
+YYYY-MM-DD/
+  dataset.csv   # 평가 입력 URL과 기대 라벨
+  results.csv   # db_dependent, db_independent 실행 결과
+  report.md     # 테스트 셋 구성, 검증 결과, 개선 방안 요약
+```
+
+## 최신 결과
+
+기준일: **2026-05-29**
+
+- 총 URL: 220건
+- 정상 기대값: 106건
+- 악성 기대값: 114건
+- 정상 URL 오탐(FP): 0건
+- 악성 URL 미탐(FN): 10건
+- verdict 없음: 70건
+- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 70건
+
+| API | 호출 | 판정 | Coverage | NO_VERDICT | PAGE_UNAVAILABLE | TP | FP | TN | FN | Accuracy | Precision | Recall | F1 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| db_dependent | 220 | 185 | 84.09% | 35 | 35 | 89 | 0 | 91 | 5 | 97.30% | 100.00% | 94.68% | 97.27% |
+| db_independent | 220 | 185 | 84.09% | 35 | 35 | 88 | 0 | 92 | 5 | 97.30% | 100.00% | 94.62% | 97.24% |
+
+## 날짜별 추이
+
+| 날짜 | 정상 오탐(FP) | 악성 미탐(FN) | verdict 없음 | 요약 |
+|---|---:|---:|---:|---|
+| 2026-05-23 | 8 | 9 | 0 | 초기 기준선. 전체 coverage 100%, 정상 URL 오탐 존재. |
+| 2026-05-24 | 9 | 21 | 0 | 정상 오탐과 악성 미탐이 모두 증가. |
+| 2026-05-25 | - | - | - | 결과 CSV 없음. 데이터셋 기준선만 보관. |
+| 2026-05-26 | - | - | - | 결과 CSV 없음. 데이터셋 기준선만 보관. |
+| 2026-05-27 | 4 | 31 | 114 | 파이프라인 오류/미판정 분리 전 결과. |
+| 2026-05-28 | 7 | 59 | 79 | PAGE_UNAVAILABLE 분리 시작, 정상 오탐 재발. |
+| 2026-05-29 | 0 | 10 | 70 | 정상 오탐 0건, precision 100%, page unavailable은 verdict 없이 분리. |
+
+## 해석 기준
+
+- `caution`과 `danger`는 탐지 양성으로 계산합니다.
+- 찾을 수 없는 페이지, 400번대 접근 실패, 사라진 OpenPhish URL은 verdict를 만들지 않고 `PAGE_UNAVAILABLE`로 분리합니다.
+- `NO_VERDICT_PAGE_UNAVAILABLE`은 정확도 계산 분모에서 제외하고, Spring 콜백에는 실패 상태와 HTTP status code를 전달하는 것이 현재 정책입니다.
+- 2026-05-29 기준 개선의 핵심은 정상 URL 오탐을 0건으로 낮추면서, 판정 가능한 악성 URL recall을 94% 이상으로 유지한 점입니다.
+
+## 테스트 셋 구성
+
+2026-05-29 기준 데이터셋 구성은 다음과 같습니다.
+
+| 카테고리 | 건수 | 설명 |
+|---|---:|---|
+| normal | 100 | 정상 URL 샘플 |
+| openphish_malicious | 100 | OpenPhish 기반 악성 URL 샘플 |
+| custom_corpus | 5 | 자체 수집 회귀 샘플 |
+| dga | 5 | DGA 유사 도메인 샘플 |
+| httpbin_redirect_chain | 5 | 정상 리다이렉트 체인 샘플 |
+| suspicious_url_string | 5 | 문자열 기반 의심 URL 샘플 |
+
+## 파일 관리 원칙
+
+- 날짜별 디렉터리에는 `dataset.csv`, `results.csv`, `report.md`만 둡니다.
+- 임시 summary, 로그, 실행 중 산출물은 커밋하지 않습니다.
+- 외부 URL 상태는 시간이 지나며 바뀌므로, 날짜별 결과는 같은 날짜의 데이터셋과 함께 해석해야 합니다.
