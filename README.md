@@ -5,7 +5,7 @@ LinClean FastAPI URL 보안 엔진의 날짜별 평가 결과 저장소입니다
 ```text
 YYYY-MM-DD/
   dataset.csv   # 평가 입력 URL과 기대 라벨
-  results.csv   # db_dependent, db_independent 실행 결과
+  results.csv   # 실행한 API의 상세 결과
   report.md     # 테스트 셋 구성, 검증 결과, 개선 방안 요약
   report.xlsx   # 한글 Excel 요약, 상세 결과, AI 답변 정리
 ```
@@ -14,23 +14,22 @@ YYYY-MM-DD/
 
 기준일: **2026-06-05**
 
-이번 평가부터 실제 공용 웹에서 phishing URL이 차지하는 비율을 반영한 1000건 테스트와, OpenPhish 악성 URL 100건 보조 테스트를 분리해 보관합니다.
+이번 평가부터 실제 공용 웹에서 phishing URL이 차지하는 비율을 반영한 1000건 테스트와, OpenPhish 악성 URL 100건 보조 테스트를 분리해 보관합니다. 2026-06-05 재평가는 DB 포함 파이프라인 API(`/api/v1/analyze/sync`)만 사용했습니다.
 
 ### 2026-06-05-public-web-1000
 
 - 총 URL: 1000건
 - 정상 기대값: 999건
 - 악성 기대값: 1건
-- 정상 URL 오탐(FP): 219건
+- 정상 URL 오탐(FP): 122건
 - 악성 URL 미탐(FN): 0건
-- verdict 없음: 885건
-- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 634건, `NO_VERDICT_REQUEST_FAILED` 251건
+- verdict 없음: 374건
+- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 374건
 - Excel 리포트: `2026-06-05-public-web-1000/report.xlsx`
 
 | API | 호출 | 판정 | Coverage | NO_VERDICT | PAGE_UNAVAILABLE | TP | FP | TN | FN | Accuracy | Precision | Recall | F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| db_dependent | 1000 | 609 | 60.90% | 391 | 367 | 1 | 119 | 489 | 0 | 80.46% | 0.83% | 100.00% | 1.65% |
-| db_independent | 1000 | 506 | 50.60% | 494 | 267 | 1 | 100 | 405 | 0 | 80.24% | 0.99% | 100.00% | 1.96% |
+| db_dependent | 1000 | 626 | 62.60% | 374 | 374 | 1 | 122 | 503 | 0 | 80.51% | 0.81% | 100.00% | 1.61% |
 
 ### 2026-06-05-openphish-100
 
@@ -38,28 +37,26 @@ YYYY-MM-DD/
 - 정상 기대값: 0건
 - 악성 기대값: 100건
 - 정상 URL 오탐(FP): 0건
-- 악성 URL 미탐(FN): 17건
-- verdict 없음: 35건
-- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 7건, `NO_VERDICT_REQUEST_FAILED` 28건
+- 악성 URL 미탐(FN): 21건
+- verdict 없음: 6건
+- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 6건
 - Excel 리포트: `2026-06-05-openphish-100/report.xlsx`
 
 | API | 호출 | 판정 | Coverage | NO_VERDICT | PAGE_UNAVAILABLE | TP | FP | TN | FN | Accuracy | Precision | Recall | F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| db_dependent | 100 | 93 | 93.00% | 7 | 4 | 81 | 0 | 0 | 12 | 87.10% | 100.00% | 87.10% | 93.10% |
-| db_independent | 100 | 72 | 72.00% | 28 | 3 | 67 | 0 | 0 | 5 | 93.06% | 100.00% | 93.06% | 96.40% |
+| db_dependent | 100 | 94 | 94.00% | 6 | 6 | 73 | 0 | 0 | 21 | 77.66% | 100.00% | 77.66% | 87.43% |
 
 ## 대표 지표
 
-| 테스트 | API | 전체 악성 기준 탐지율 | 판정 가능 악성 기준 Recall | 정상 오탐 |
+| 테스트 | API | 판정 가능 악성 기준 Recall | Accuracy | 정상 오탐 |
 |---|---|---:|---:|---:|
-| public-web-1000 | db_dependent | 100.00% | 100.00% | 119 |
-| public-web-1000 | db_independent | 100.00% | 100.00% | 100 |
-| openphish-100 | db_dependent | 81.00% | 87.10% | 0 |
-| openphish-100 | db_independent | 67.00% | 93.06% | 0 |
+| public-web-1000 | db_dependent | 100.00% | 80.51% | 122 |
+| openphish-100 | db_dependent | 77.66% | 77.66% | 0 |
 
 - public-web-1000의 999:1 구성은 APWG Q1 2026 unique phishing Web sites/attacks 971,181건과 Netcraft April 2026 전체 사이트 1,433,742,238개를 기준으로 계산했다.
 - 악성 비율은 `971,181 / 1,433,742,238 = 0.06774%`이고, 1000건 테스트 셋에서는 `round(0.6774) = 1`건을 악성으로 배정했다.
 - OpenPhish 100건 테스트는 공용 웹 비율 테스트에서 부족한 악성 표본에 대한 보조 회귀 테스트다.
+- Accuracy, Precision, Recall, F1은 `NO_VERDICT`와 `PAGE_UNAVAILABLE`을 제외한 판정 가능 건(`TP`, `FP`, `TN`, `FN`)만 분모로 계산했다.
 - 출처: https://docs.apwg.org/reports/apwg_trends_report_q1_2026.pdf, https://www.netcraft.com/blog/april-2026-web-server-survey
 
 ## 날짜별 추이
@@ -75,14 +72,14 @@ YYYY-MM-DD/
 | 2026-05-29 | 0 | 10 | 70 | 정상 오탐 0건, precision 100%, page unavailable은 verdict 없이 분리. |
 | 2026-05-30 | 2 | 0 | 39 | OpenPhish 최신화 후 판정 가능 악성 recall 100%, custom_corpus 정상 1건이 양쪽 API에서 오탐. |
 | 2026-05-31 | 2 | 0 | 46 | OpenPhish 최신화 후 판정 가능 악성 recall 100%, AI 답변 요약 포함 Excel 리포트 추가. |
-| 2026-06-05-public-web-1000 | 219 | 0 | 885 | APWG/Netcraft 기반 공용 웹 분포 반영. 999 정상, 1 악성. |
-| 2026-06-05-openphish-100 | 0 | 17 | 35 | OpenPhish 악성 URL 100건 보조 회귀 테스트. |
+| 2026-06-05-public-web-1000 | 122 | 0 | 374 | APWG/Netcraft 기반 공용 웹 분포 반영. DB 포함 API만 재평가. |
+| 2026-06-05-openphish-100 | 0 | 21 | 6 | OpenPhish 악성 URL 100건 보조 회귀 테스트. DB 포함 API만 재평가. |
 
 ## 해석 기준
 
 - `caution`과 `danger`는 탐지 양성으로 계산합니다.
 - 찾을 수 없는 페이지, 400번대 접근 실패, 사라진 OpenPhish URL은 verdict를 만들지 않고 `PAGE_UNAVAILABLE`로 분리합니다.
-- `NO_VERDICT_PAGE_UNAVAILABLE`은 정확도 계산 분모에서 제외하고, Spring 콜백에는 실패 상태와 HTTP status code를 전달하는 것이 현재 정책입니다.
+- `NO_VERDICT_PAGE_UNAVAILABLE`은 Accuracy, Precision, Recall, F1 계산 분모에서 제외하고, Spring 콜백에는 실패 상태와 HTTP status code를 전달하는 것이 현재 정책입니다.
 - 2026-06-05 기준 개선의 핵심은 테스트 셋 비율을 실제 공용 웹 분포에 맞춰 재구성한 점입니다. public-web-1000에서는 정상 URL 오탐이 크게 드러났고, openphish-100에서는 악성 URL 회귀 탐지 성능을 별도로 확인했습니다.
 
 ## 테스트 셋 구성
