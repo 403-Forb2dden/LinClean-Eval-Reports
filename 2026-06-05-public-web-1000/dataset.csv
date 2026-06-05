@@ -1,0 +1,1001 @@
+case_id,category,url,expected_label,expected_malicious,source
+safe_001,public_web_safe,https://www.google.com/,safe,false,curated_popular_sites
+safe_002,public_web_safe,https://www.youtube.com/,safe,false,curated_popular_sites
+safe_003,public_web_safe,https://www.facebook.com/,safe,false,curated_popular_sites
+safe_004,public_web_safe,https://www.instagram.com/,safe,false,curated_popular_sites
+safe_005,public_web_safe,https://www.wikipedia.org/,safe,false,curated_popular_sites
+safe_006,public_web_safe,https://www.reddit.com/,safe,false,curated_popular_sites
+safe_007,public_web_safe,https://www.amazon.com/,safe,false,curated_popular_sites
+safe_008,public_web_safe,https://www.apple.com/,safe,false,curated_popular_sites
+safe_009,public_web_safe,https://www.microsoft.com/,safe,false,curated_popular_sites
+safe_010,public_web_safe,https://www.netflix.com/,safe,false,curated_popular_sites
+safe_011,public_web_safe,https://www.linkedin.com/,safe,false,curated_popular_sites
+safe_012,public_web_safe,https://www.github.com/,safe,false,curated_popular_sites
+safe_013,public_web_safe,https://www.stackoverflow.com/,safe,false,curated_popular_sites
+safe_014,public_web_safe,https://www.cloudflare.com/,safe,false,curated_popular_sites
+safe_015,public_web_safe,https://www.mozilla.org/,safe,false,curated_popular_sites
+safe_016,public_web_safe,https://www.python.org/,safe,false,curated_popular_sites
+safe_017,public_web_safe,https://www.djangoproject.com/,safe,false,curated_popular_sites
+safe_018,public_web_safe,https://fastapi.tiangolo.com/,safe,false,curated_popular_sites
+safe_019,public_web_safe,https://www.postgresql.org/,safe,false,curated_popular_sites
+safe_020,public_web_safe,https://www.sqlite.org/,safe,false,curated_popular_sites
+safe_021,public_web_safe,https://www.docker.com/,safe,false,curated_popular_sites
+safe_022,public_web_safe,https://kubernetes.io/,safe,false,curated_popular_sites
+safe_023,public_web_safe,https://www.ubuntu.com/,safe,false,curated_popular_sites
+safe_024,public_web_safe,https://www.debian.org/,safe,false,curated_popular_sites
+safe_025,public_web_safe,https://www.kernel.org/,safe,false,curated_popular_sites
+safe_026,public_web_safe,https://www.gnu.org/,safe,false,curated_popular_sites
+safe_027,public_web_safe,https://www.w3.org/,safe,false,curated_popular_sites
+safe_028,public_web_safe,https://developer.mozilla.org/,safe,false,curated_popular_sites
+safe_029,public_web_safe,https://docs.python.org/3/,safe,false,curated_popular_sites
+safe_030,public_web_safe,https://nodejs.org/,safe,false,curated_popular_sites
+safe_031,public_web_safe,https://www.npmjs.com/,safe,false,curated_popular_sites
+safe_032,public_web_safe,https://react.dev/,safe,false,curated_popular_sites
+safe_033,public_web_safe,https://nextjs.org/,safe,false,curated_popular_sites
+safe_034,public_web_safe,https://www.typescriptlang.org/,safe,false,curated_popular_sites
+safe_035,public_web_safe,https://vite.dev/,safe,false,curated_popular_sites
+safe_036,public_web_safe,https://tailwindcss.com/,safe,false,curated_popular_sites
+safe_037,public_web_safe,https://www.rust-lang.org/,safe,false,curated_popular_sites
+safe_038,public_web_safe,https://go.dev/,safe,false,curated_popular_sites
+safe_039,public_web_safe,https://www.oracle.com/,safe,false,curated_popular_sites
+safe_040,public_web_safe,https://www.ibm.com/,safe,false,curated_popular_sites
+safe_041,public_web_safe,https://www.salesforce.com/,safe,false,curated_popular_sites
+safe_042,public_web_safe,https://www.adobe.com/,safe,false,curated_popular_sites
+safe_043,public_web_safe,https://www.figma.com/,safe,false,curated_popular_sites
+safe_044,public_web_safe,https://slack.com/,safe,false,curated_popular_sites
+safe_045,public_web_safe,https://www.zoom.com/,safe,false,curated_popular_sites
+safe_046,public_web_safe,https://www.notion.com/,safe,false,curated_popular_sites
+safe_047,public_web_safe,https://www.dropbox.com/,safe,false,curated_popular_sites
+safe_048,public_web_safe,https://www.spotify.com/,safe,false,curated_popular_sites
+safe_049,public_web_safe,https://www.nytimes.com/,safe,false,curated_popular_sites
+safe_050,public_web_safe,https://www.bbc.com/,safe,false,curated_popular_sites
+safe_051,public_web_safe,https://www.cnn.com/,safe,false,curated_popular_sites
+safe_052,public_web_safe,https://www.reuters.com/,safe,false,curated_popular_sites
+safe_053,public_web_safe,https://apnews.com/,safe,false,curated_popular_sites
+safe_054,public_web_safe,https://www.nasa.gov/,safe,false,curated_popular_sites
+safe_055,public_web_safe,https://www.noaa.gov/,safe,false,curated_popular_sites
+safe_056,public_web_safe,https://www.nih.gov/,safe,false,curated_popular_sites
+safe_057,public_web_safe,https://www.cdc.gov/,safe,false,curated_popular_sites
+safe_058,public_web_safe,https://www.fda.gov/,safe,false,curated_popular_sites
+safe_059,public_web_safe,https://www.ftc.gov/,safe,false,curated_popular_sites
+safe_060,public_web_safe,https://www.sec.gov/,safe,false,curated_popular_sites
+safe_061,public_web_safe,https://www.usa.gov/,safe,false,curated_popular_sites
+safe_062,public_web_safe,https://www.whitehouse.gov/,safe,false,curated_popular_sites
+safe_063,public_web_safe,https://www.loc.gov/,safe,false,curated_popular_sites
+safe_064,public_web_safe,https://www.archives.gov/,safe,false,curated_popular_sites
+safe_065,public_web_safe,https://www.harvard.edu/,safe,false,curated_popular_sites
+safe_066,public_web_safe,https://www.mit.edu/,safe,false,curated_popular_sites
+safe_067,public_web_safe,https://www.stanford.edu/,safe,false,curated_popular_sites
+safe_068,public_web_safe,https://www.berkeley.edu/,safe,false,curated_popular_sites
+safe_069,public_web_safe,https://www.cmu.edu/,safe,false,curated_popular_sites
+safe_070,public_web_safe,https://www.ox.ac.uk/,safe,false,curated_popular_sites
+safe_071,public_web_safe,https://www.cam.ac.uk/,safe,false,curated_popular_sites
+safe_072,public_web_safe,https://www.ethz.ch/,safe,false,curated_popular_sites
+safe_073,public_web_safe,https://www.kaist.ac.kr/,safe,false,curated_popular_sites
+safe_074,public_web_safe,https://www.snu.ac.kr/,safe,false,curated_popular_sites
+safe_075,public_web_safe,https://www.yonsei.ac.kr/,safe,false,curated_popular_sites
+safe_076,public_web_safe,https://www.korea.ac.kr/,safe,false,curated_popular_sites
+safe_077,public_web_safe,https://www.naver.com/,safe,false,curated_popular_sites
+safe_078,public_web_safe,https://www.kakao.com/,safe,false,curated_popular_sites
+safe_079,public_web_safe,https://www.samsung.com/,safe,false,curated_popular_sites
+safe_080,public_web_safe,https://www.lg.com/,safe,false,curated_popular_sites
+safe_081,public_web_safe,https://www.hyundai.com/,safe,false,curated_popular_sites
+safe_082,public_web_safe,https://www.kia.com/,safe,false,curated_popular_sites
+safe_083,public_web_safe,https://www.sk.com/,safe,false,curated_popular_sites
+safe_084,public_web_safe,https://www.coupang.com/,safe,false,curated_popular_sites
+safe_085,public_web_safe,https://www.11st.co.kr/,safe,false,curated_popular_sites
+safe_086,public_web_safe,https://www.gmarket.co.kr/,safe,false,curated_popular_sites
+safe_087,public_web_safe,https://www.auction.co.kr/,safe,false,curated_popular_sites
+safe_088,public_web_safe,https://www.interpark.com/,safe,false,curated_popular_sites
+safe_089,public_web_safe,https://www.korail.com/,safe,false,curated_popular_sites
+safe_090,public_web_safe,https://www.weather.go.kr/,safe,false,curated_popular_sites
+safe_091,public_web_safe,https://www.mois.go.kr/,safe,false,curated_popular_sites
+safe_092,public_web_safe,https://www.kisa.or.kr/,safe,false,curated_popular_sites
+safe_093,public_web_safe,https://www.krcert.or.kr/,safe,false,curated_popular_sites
+safe_094,public_web_safe,https://www.police.go.kr/,safe,false,curated_popular_sites
+safe_095,public_web_safe,https://www.kbfg.com/,safe,false,curated_popular_sites
+safe_096,public_web_safe,https://www.shinhan.com/,safe,false,curated_popular_sites
+safe_097,public_web_safe,https://www.wooribank.com/,safe,false,curated_popular_sites
+safe_098,public_web_safe,https://www.hanabank.com/,safe,false,curated_popular_sites
+safe_099,public_web_safe,https://www.nhis.or.kr/,safe,false,curated_popular_sites
+safe_100,public_web_safe,https://www.gov.kr/,safe,false,curated_popular_sites
+safe_101,public_web_safe,https://httpbin.org/redirect/1,safe,false,httpbin.org
+safe_102,public_web_safe,https://httpbin.org/relative-redirect/2,safe,false,httpbin.org
+safe_103,public_web_safe,https://httpbin.org/absolute-redirect/3,safe,false,httpbin.org
+safe_104,public_web_safe,https://httpbin.org/redirect-to?url=https%3A%2F%2Fexample.com%2F&status_code=302,safe,false,httpbin.org
+safe_105,public_web_safe,https://httpbin.org/redirect-to?url=https%3A%2F%2Fwww.python.org%2F&status_code=301,safe,false,httpbin.org
+safe_106,public_web_safe,https://google.com/,safe,false,Tranco top sites
+safe_107,public_web_safe,https://gtld-servers.net/,safe,false,Tranco top sites
+safe_108,public_web_safe,https://cloudflare.com/,safe,false,Tranco top sites
+safe_109,public_web_safe,https://gstatic.com/,safe,false,Tranco top sites
+safe_110,public_web_safe,https://facebook.com/,safe,false,Tranco top sites
+safe_111,public_web_safe,https://microsoft.com/,safe,false,Tranco top sites
+safe_112,public_web_safe,https://googleapis.com/,safe,false,Tranco top sites
+safe_113,public_web_safe,https://youtube.com/,safe,false,Tranco top sites
+safe_114,public_web_safe,https://amazonaws.com/,safe,false,Tranco top sites
+safe_115,public_web_safe,https://apple.com/,safe,false,Tranco top sites
+safe_116,public_web_safe,https://instagram.com/,safe,false,Tranco top sites
+safe_117,public_web_safe,https://mail.ru/,safe,false,Tranco top sites
+safe_118,public_web_safe,https://akamai.net/,safe,false,Tranco top sites
+safe_119,public_web_safe,https://fbcdn.net/,safe,false,Tranco top sites
+safe_120,public_web_safe,https://dzen.ru/,safe,false,Tranco top sites
+safe_121,public_web_safe,https://twitter.com/,safe,false,Tranco top sites
+safe_122,public_web_safe,https://linkedin.com/,safe,false,Tranco top sites
+safe_123,public_web_safe,https://ezviz7.com/,safe,false,Tranco top sites
+safe_124,public_web_safe,https://googletagmanager.com/,safe,false,Tranco top sites
+safe_125,public_web_safe,https://live.com/,safe,false,Tranco top sites
+safe_126,public_web_safe,https://googlevideo.com/,safe,false,Tranco top sites
+safe_127,public_web_safe,https://office.com/,safe,false,Tranco top sites
+safe_128,public_web_safe,https://akamaiedge.net/,safe,false,Tranco top sites
+safe_129,public_web_safe,https://akadns.net/,safe,false,Tranco top sites
+safe_130,public_web_safe,https://amazon.com/,safe,false,Tranco top sites
+safe_131,public_web_safe,https://azure.com/,safe,false,Tranco top sites
+safe_132,public_web_safe,https://wikipedia.org/,safe,false,Tranco top sites
+safe_133,public_web_safe,https://github.com/,safe,false,Tranco top sites
+safe_134,public_web_safe,https://domaincontrol.com/,safe,false,Tranco top sites
+safe_135,public_web_safe,https://googleusercontent.com/,safe,false,Tranco top sites
+safe_136,public_web_safe,https://bing.com/,safe,false,Tranco top sites
+safe_137,public_web_safe,https://doubleclick.net/,safe,false,Tranco top sites
+safe_138,public_web_safe,https://fastly.net/,safe,false,Tranco top sites
+safe_139,public_web_safe,https://appsflyersdk.com/,safe,false,Tranco top sites
+safe_140,public_web_safe,https://whatsapp.net/,safe,false,Tranco top sites
+safe_141,public_web_safe,https://microsoftonline.com/,safe,false,Tranco top sites
+safe_142,public_web_safe,https://apple-dns.net/,safe,false,Tranco top sites
+safe_143,public_web_safe,https://trafficmanager.net/,safe,false,Tranco top sites
+safe_144,public_web_safe,https://hicloudcam.com/,safe,false,Tranco top sites
+safe_145,public_web_safe,https://netflix.com/,safe,false,Tranco top sites
+safe_146,public_web_safe,https://office.net/,safe,false,Tranco top sites
+safe_147,public_web_safe,https://aaplimg.com/,safe,false,Tranco top sites
+safe_148,public_web_safe,https://wordpress.org/,safe,false,Tranco top sites
+safe_149,public_web_safe,https://digicert.com/,safe,false,Tranco top sites
+safe_150,public_web_safe,https://skype.com/,safe,false,Tranco top sites
+safe_151,public_web_safe,https://sharepoint.com/,safe,false,Tranco top sites
+safe_152,public_web_safe,https://youtu.be/,safe,false,Tranco top sites
+safe_153,public_web_safe,https://ripn.net/,safe,false,Tranco top sites
+safe_154,public_web_safe,https://pinterest.com/,safe,false,Tranco top sites
+safe_155,public_web_safe,https://gandi.net/,safe,false,Tranco top sites
+safe_156,public_web_safe,https://whatsapp.com/,safe,false,Tranco top sites
+safe_157,public_web_safe,https://cloudfront.net/,safe,false,Tranco top sites
+safe_158,public_web_safe,https://goo.gl/,safe,false,Tranco top sites
+safe_159,public_web_safe,https://x.com/,safe,false,Tranco top sites
+safe_160,public_web_safe,https://googlesyndication.com/,safe,false,Tranco top sites
+safe_161,public_web_safe,https://yahoo.com/,safe,false,Tranco top sites
+safe_162,public_web_safe,https://cloud.microsoft/,safe,false,Tranco top sites
+safe_163,public_web_safe,https://icloud.com/,safe,false,Tranco top sites
+safe_164,public_web_safe,https://tiktok.com/,safe,false,Tranco top sites
+safe_165,public_web_safe,https://windowsupdate.com/,safe,false,Tranco top sites
+safe_166,public_web_safe,https://msn.com/,safe,false,Tranco top sites
+safe_167,public_web_safe,https://spotify.com/,safe,false,Tranco top sites
+safe_168,public_web_safe,https://gvt1.com/,safe,false,Tranco top sites
+safe_169,public_web_safe,https://cloudflare.net/,safe,false,Tranco top sites
+safe_170,public_web_safe,https://adobe.com/,safe,false,Tranco top sites
+safe_171,public_web_safe,https://googledomains.com/,safe,false,Tranco top sites
+safe_172,public_web_safe,https://ntp.org/,safe,false,Tranco top sites
+safe_173,public_web_safe,https://windows.net/,safe,false,Tranco top sites
+safe_174,public_web_safe,https://vimeo.com/,safe,false,Tranco top sites
+safe_175,public_web_safe,https://chatgpt.com/,safe,false,Tranco top sites
+safe_176,public_web_safe,https://wa.me/,safe,false,Tranco top sites
+safe_177,public_web_safe,https://akam.net/,safe,false,Tranco top sites
+safe_178,public_web_safe,https://myfritz.net/,safe,false,Tranco top sites
+safe_179,public_web_safe,https://tiktokcdn.com/,safe,false,Tranco top sites
+safe_180,public_web_safe,https://roblox.com/,safe,false,Tranco top sites
+safe_181,public_web_safe,https://gvt2.com/,safe,false,Tranco top sites
+safe_182,public_web_safe,https://zoom.us/,safe,false,Tranco top sites
+safe_183,public_web_safe,https://pv-cdn.net/,safe,false,Tranco top sites
+safe_184,public_web_safe,https://tiktokv.com/,safe,false,Tranco top sites
+safe_185,public_web_safe,https://qq.com/,safe,false,Tranco top sites
+safe_186,public_web_safe,https://ytimg.com/,safe,false,Tranco top sites
+safe_187,public_web_safe,https://yandex.net/,safe,false,Tranco top sites
+safe_188,public_web_safe,https://baidu.com/,safe,false,Tranco top sites
+safe_189,public_web_safe,https://cloudflare-dns.com/,safe,false,Tranco top sites
+safe_190,public_web_safe,https://nginx.org/,safe,false,Tranco top sites
+safe_191,public_web_safe,https://edgekey.net/,safe,false,Tranco top sites
+safe_192,public_web_safe,https://windows.com/,safe,false,Tranco top sites
+safe_193,public_web_safe,https://workers.dev/,safe,false,Tranco top sites
+safe_194,public_web_safe,https://mozilla.org/,safe,false,Tranco top sites
+safe_195,public_web_safe,https://opera.com/,safe,false,Tranco top sites
+safe_196,public_web_safe,https://nic.ru/,safe,false,Tranco top sites
+safe_197,public_web_safe,https://yandex.ru/,safe,false,Tranco top sites
+safe_198,public_web_safe,https://samsung.com/,safe,false,Tranco top sites
+safe_199,public_web_safe,https://sentry.io/,safe,false,Tranco top sites
+safe_200,public_web_safe,https://cdninstagram.com/,safe,false,Tranco top sites
+safe_201,public_web_safe,https://nginx.com/,safe,false,Tranco top sites
+safe_202,public_web_safe,https://edgesuite.net/,safe,false,Tranco top sites
+safe_203,public_web_safe,https://telekom.de/,safe,false,Tranco top sites
+safe_204,public_web_safe,https://google-analytics.com/,safe,false,Tranco top sites
+safe_205,public_web_safe,https://okcdn.ru/,safe,false,Tranco top sites
+safe_206,public_web_safe,https://wordpress.com/,safe,false,Tranco top sites
+safe_207,public_web_safe,https://bit.ly/,safe,false,Tranco top sites
+safe_208,public_web_safe,https://reddit.com/,safe,false,Tranco top sites
+safe_209,public_web_safe,https://ui.com/,safe,false,Tranco top sites
+safe_210,public_web_safe,https://discord.gg/,safe,false,Tranco top sites
+safe_211,public_web_safe,https://office365.com/,safe,false,Tranco top sites
+safe_212,public_web_safe,https://root-servers.net/,safe,false,Tranco top sites
+safe_213,public_web_safe,https://t.me/,safe,false,Tranco top sites
+safe_214,public_web_safe,https://criteo.com/,safe,false,Tranco top sites
+safe_215,public_web_safe,https://a2z.com/,safe,false,Tranco top sites
+safe_216,public_web_safe,https://blogspot.com/,safe,false,Tranco top sites
+safe_217,public_web_safe,https://europa.eu/,safe,false,Tranco top sites
+safe_218,public_web_safe,https://trbcdn.net/,safe,false,Tranco top sites
+safe_219,public_web_safe,https://vk.com/,safe,false,Tranco top sites
+safe_220,public_web_safe,https://googleadservices.com/,safe,false,Tranco top sites
+safe_221,public_web_safe,https://vedcdnlb.com/,safe,false,Tranco top sites
+safe_222,public_web_safe,https://b-cdn.net/,safe,false,Tranco top sites
+safe_223,public_web_safe,https://epicgames.com/,safe,false,Tranco top sites
+safe_224,public_web_safe,https://amazon-adsystem.com/,safe,false,Tranco top sites
+safe_225,public_web_safe,https://unity3d.com/,safe,false,Tranco top sites
+safe_226,public_web_safe,https://snapchat.com/,safe,false,Tranco top sites
+safe_227,public_web_safe,https://app-measurement.com/,safe,false,Tranco top sites
+safe_228,public_web_safe,https://github.io/,safe,false,Tranco top sites
+safe_229,public_web_safe,https://mailinabox.email/,safe,false,Tranco top sites
+safe_230,public_web_safe,https://apache.org/,safe,false,Tranco top sites
+safe_231,public_web_safe,https://cdn77.org/,safe,false,Tranco top sites
+safe_232,public_web_safe,https://amazonvideo.com/,safe,false,Tranco top sites
+safe_233,public_web_safe,https://nih.gov/,safe,false,Tranco top sites
+safe_234,public_web_safe,https://intuit.com/,safe,false,Tranco top sites
+safe_235,public_web_safe,https://f5.com/,safe,false,Tranco top sites
+safe_236,public_web_safe,https://amazon.dev/,safe,false,Tranco top sites
+safe_237,public_web_safe,https://kaspersky.com/,safe,false,Tranco top sites
+safe_238,public_web_safe,https://dns.google/,safe,false,Tranco top sites
+safe_239,public_web_safe,https://msftncsi.com/,safe,false,Tranco top sites
+safe_240,public_web_safe,https://prodregistryv2.org/,safe,false,Tranco top sites
+safe_241,public_web_safe,https://outlook.com/,safe,false,Tranco top sites
+safe_242,public_web_safe,https://gwfb.net/,safe,false,Tranco top sites
+safe_243,public_web_safe,https://gravatar.com/,safe,false,Tranco top sites
+safe_244,public_web_safe,https://app-analytics-services.com/,safe,false,Tranco top sites
+safe_245,public_web_safe,https://dropbox.com/,safe,false,Tranco top sites
+safe_246,public_web_safe,https://registrar-servers.com/,safe,false,Tranco top sites
+safe_247,public_web_safe,https://reg.ru/,safe,false,Tranco top sites
+safe_248,public_web_safe,https://forms.gle/,safe,false,Tranco top sites
+safe_249,public_web_safe,https://iiko.it/,safe,false,Tranco top sites
+safe_250,public_web_safe,https://xiaomi.com/,safe,false,Tranco top sites
+safe_251,public_web_safe,https://vkuserphoto.ru/,safe,false,Tranco top sites
+safe_252,public_web_safe,https://archive.org/,safe,false,Tranco top sites
+safe_253,public_web_safe,https://godaddy.com/,safe,false,Tranco top sites
+safe_254,public_web_safe,https://yccdn.ru/,safe,false,Tranco top sites
+safe_255,public_web_safe,https://steamserver.net/,safe,false,Tranco top sites
+safe_256,public_web_safe,https://msftconnecttest.com/,safe,false,Tranco top sites
+safe_257,public_web_safe,https://spo-msedge.net/,safe,false,Tranco top sites
+safe_258,public_web_safe,https://tumblr.com/,safe,false,Tranco top sites
+safe_259,public_web_safe,https://nytimes.com/,safe,false,Tranco top sites
+safe_260,public_web_safe,https://azurefd.net/,safe,false,Tranco top sites
+safe_261,public_web_safe,https://dnsowl.com/,safe,false,Tranco top sites
+safe_262,public_web_safe,https://paypal.com/,safe,false,Tranco top sites
+safe_263,public_web_safe,https://ax-msedge.net/,safe,false,Tranco top sites
+safe_264,public_web_safe,https://miit.gov.cn/,safe,false,Tranco top sites
+safe_265,public_web_safe,https://one.one/,safe,false,Tranco top sites
+safe_266,public_web_safe,https://nflxso.net/,safe,false,Tranco top sites
+safe_267,public_web_safe,https://shopify.com/,safe,false,Tranco top sites
+safe_268,public_web_safe,https://aliyuncs.com/,safe,false,Tranco top sites
+safe_269,public_web_safe,https://discord.com/,safe,false,Tranco top sites
+safe_270,public_web_safe,https://applovin.com/,safe,false,Tranco top sites
+safe_271,public_web_safe,https://3gppnetwork.org/,safe,false,Tranco top sites
+safe_272,public_web_safe,https://ggpht.com/,safe,false,Tranco top sites
+safe_273,public_web_safe,https://adobe.io/,safe,false,Tranco top sites
+safe_274,public_web_safe,https://akamaitech.net/,safe,false,Tranco top sites
+safe_275,public_web_safe,https://macromedia.com/,safe,false,Tranco top sites
+safe_276,public_web_safe,https://bytefcdn-oversea.com/,safe,false,Tranco top sites
+safe_277,public_web_safe,https://azurewebsites.net/,safe,false,Tranco top sites
+safe_278,public_web_safe,https://webex.com/,safe,false,Tranco top sites
+safe_279,public_web_safe,https://userapi.com/,safe,false,Tranco top sites
+safe_280,public_web_safe,https://flickr.com/,safe,false,Tranco top sites
+safe_281,public_web_safe,https://wac-msedge.net/,safe,false,Tranco top sites
+safe_282,public_web_safe,https://cdn-apple.com/,safe,false,Tranco top sites
+safe_283,public_web_safe,https://soundcloud.com/,safe,false,Tranco top sites
+safe_284,public_web_safe,https://medium.com/,safe,false,Tranco top sites
+safe_285,public_web_safe,https://example.com/,safe,false,Tranco top sites
+safe_286,public_web_safe,https://w3.org/,safe,false,Tranco top sites
+safe_287,public_web_safe,https://taboola.com/,safe,false,Tranco top sites
+safe_288,public_web_safe,https://rubiconproject.com/,safe,false,Tranco top sites
+safe_289,public_web_safe,https://adtrafficquality.google/,safe,false,Tranco top sites
+safe_290,public_web_safe,https://tm-azurefd.net/,safe,false,Tranco top sites
+safe_291,public_web_safe,https://cnn.com/,safe,false,Tranco top sites
+safe_292,public_web_safe,https://aws.dev/,safe,false,Tranco top sites
+safe_293,public_web_safe,https://dns-parking.com/,safe,false,Tranco top sites
+safe_294,public_web_safe,https://ipv4only.arpa/,safe,false,Tranco top sites
+safe_295,public_web_safe,https://theguardian.com/,safe,false,Tranco top sites
+safe_296,public_web_safe,https://jomodns.com/,safe,false,Tranco top sites
+safe_297,public_web_safe,https://vungle.com/,safe,false,Tranco top sites
+safe_298,public_web_safe,https://static.microsoft/,safe,false,Tranco top sites
+safe_299,public_web_safe,https://nominetdns.uk/,safe,false,Tranco top sites
+safe_300,public_web_safe,https://ttdns2.com/,safe,false,Tranco top sites
+safe_301,public_web_safe,https://msedge.net/,safe,false,Tranco top sites
+safe_302,public_web_safe,https://oracle.com/,safe,false,Tranco top sites
+safe_303,public_web_safe,https://shifen.com/,safe,false,Tranco top sites
+safe_304,public_web_safe,https://sfx.ms/,safe,false,Tranco top sites
+safe_305,public_web_safe,https://fastly-edge.com/,safe,false,Tranco top sites
+safe_306,public_web_safe,https://hichina.com/,safe,false,Tranco top sites
+safe_307,public_web_safe,https://avast.com/,safe,false,Tranco top sites
+safe_308,public_web_safe,https://creativecommons.org/,safe,false,Tranco top sites
+safe_309,public_web_safe,https://forbes.com/,safe,false,Tranco top sites
+safe_310,public_web_safe,https://ebay.com/,safe,false,Tranco top sites
+safe_311,public_web_safe,https://nic.direct/,safe,false,Tranco top sites
+safe_312,public_web_safe,https://ozon.ru/,safe,false,Tranco top sites
+safe_313,public_web_safe,https://cpanel.net/,safe,false,Tranco top sites
+safe_314,public_web_safe,https://pubmatic.com/,safe,false,Tranco top sites
+safe_315,public_web_safe,https://bbc.com/,safe,false,Tranco top sites
+safe_316,public_web_safe,https://weather.com/,safe,false,Tranco top sites
+safe_317,public_web_safe,https://spov-msedge.net/,safe,false,Tranco top sites
+safe_318,public_web_safe,https://twitch.tv/,safe,false,Tranco top sites
+safe_319,public_web_safe,https://sciencedirect.com/,safe,false,Tranco top sites
+safe_320,public_web_safe,https://youtube-nocookie.com/,safe,false,Tranco top sites
+safe_321,public_web_safe,https://pki.goog/,safe,false,Tranco top sites
+safe_322,public_web_safe,https://t.co/,safe,false,Tranco top sites
+safe_323,public_web_safe,https://researchgate.net/,safe,false,Tranco top sites
+safe_324,public_web_safe,https://t-online.de/,safe,false,Tranco top sites
+safe_325,public_web_safe,https://gmail.com/,safe,false,Tranco top sites
+safe_326,public_web_safe,https://bbc.co.uk/,safe,false,Tranco top sites
+safe_327,public_web_safe,https://oxylabs.io/,safe,false,Tranco top sites
+safe_328,public_web_safe,https://azureedge.net/,safe,false,Tranco top sites
+safe_329,public_web_safe,https://mit.edu/,safe,false,Tranco top sites
+safe_330,public_web_safe,https://adnxs.com/,safe,false,Tranco top sites
+safe_331,public_web_safe,https://sourceforge.net/,safe,false,Tranco top sites
+safe_332,public_web_safe,https://miui.com/,safe,false,Tranco top sites
+safe_333,public_web_safe,https://akamaized.net/,safe,false,Tranco top sites
+safe_334,public_web_safe,https://doi.org/,safe,false,Tranco top sites
+safe_335,public_web_safe,https://canva.com/,safe,false,Tranco top sites
+safe_336,public_web_safe,https://vecdnlb.com/,safe,false,Tranco top sites
+safe_337,public_web_safe,https://android.com/,safe,false,Tranco top sites
+safe_338,public_web_safe,https://nist.gov/,safe,false,Tranco top sites
+safe_339,public_web_safe,https://ubuntu.com/,safe,false,Tranco top sites
+safe_340,public_web_safe,https://adsrvr.org/,safe,false,Tranco top sites
+safe_341,public_web_safe,https://shopifysvc.com/,safe,false,Tranco top sites
+safe_342,public_web_safe,https://imdb.com/,safe,false,Tranco top sites
+safe_343,public_web_safe,https://meraki.com/,safe,false,Tranco top sites
+safe_344,public_web_safe,https://cisco.com/,safe,false,Tranco top sites
+safe_345,public_web_safe,https://wsdvs.com/,safe,false,Tranco top sites
+safe_346,public_web_safe,https://scorecardresearch.com/,safe,false,Tranco top sites
+safe_347,public_web_safe,https://stripe.com/,safe,false,Tranco top sites
+safe_348,public_web_safe,https://ksyuncdn.com/,safe,false,Tranco top sites
+safe_349,public_web_safe,https://cdngslb.com/,safe,false,Tranco top sites
+safe_350,public_web_safe,https://roku.com/,safe,false,Tranco top sites
+safe_351,public_web_safe,https://adsafeprotected.com/,safe,false,Tranco top sites
+safe_352,public_web_safe,https://libp2p.direct/,safe,false,Tranco top sites
+safe_353,public_web_safe,https://casalemedia.com/,safe,false,Tranco top sites
+safe_354,public_web_safe,https://telegram.org/,safe,false,Tranco top sites
+safe_355,public_web_safe,https://who.int/,safe,false,Tranco top sites
+safe_356,public_web_safe,https://hubspot.com/,safe,false,Tranco top sites
+safe_357,public_web_safe,https://comcast.net/,safe,false,Tranco top sites
+safe_358,public_web_safe,https://openai.com/,safe,false,Tranco top sites
+safe_359,public_web_safe,https://linktr.ee/,safe,false,Tranco top sites
+safe_360,public_web_safe,https://doubleverify.com/,safe,false,Tranco top sites
+safe_361,public_web_safe,https://wixsite.com/,safe,false,Tranco top sites
+safe_362,public_web_safe,https://alibabadns.com/,safe,false,Tranco top sites
+safe_363,public_web_safe,https://forter.com/,safe,false,Tranco top sites
+safe_364,public_web_safe,https://dropcatch.com/,safe,false,Tranco top sites
+safe_365,public_web_safe,https://booking.com/,safe,false,Tranco top sites
+safe_366,public_web_safe,https://omtrdc.net/,safe,false,Tranco top sites
+safe_367,public_web_safe,https://facebook.net/,safe,false,Tranco top sites
+safe_368,public_web_safe,https://playstation.net/,safe,false,Tranco top sites
+safe_369,public_web_safe,https://mts.ru/,safe,false,Tranco top sites
+safe_370,public_web_safe,https://launchpad.net/,safe,false,Tranco top sites
+safe_371,public_web_safe,https://triplinkintl.com/,safe,false,Tranco top sites
+safe_372,public_web_safe,https://wikimedia.org/,safe,false,Tranco top sites
+safe_373,public_web_safe,https://hp.com/,safe,false,Tranco top sites
+safe_374,public_web_safe,https://springer.com/,safe,false,Tranco top sites
+safe_375,public_web_safe,https://tiktokcdn-us.com/,safe,false,Tranco top sites
+safe_376,public_web_safe,https://ttvnw.net/,safe,false,Tranco top sites
+safe_377,public_web_safe,https://mangosip.ru/,safe,false,Tranco top sites
+safe_378,public_web_safe,https://salesforce.com/,safe,false,Tranco top sites
+safe_379,public_web_safe,https://ampproject.org/,safe,false,Tranco top sites
+safe_380,public_web_safe,https://telekom.net/,safe,false,Tranco top sites
+safe_381,public_web_safe,https://pages.dev/,safe,false,Tranco top sites
+safe_382,public_web_safe,https://tinyurl.com/,safe,false,Tranco top sites
+safe_383,public_web_safe,https://samsungcloud.com/,safe,false,Tranco top sites
+safe_384,public_web_safe,https://ibm.com/,safe,false,Tranco top sites
+safe_385,public_web_safe,https://reuters.com/,safe,false,Tranco top sites
+safe_386,public_web_safe,https://mozilla.com/,safe,false,Tranco top sites
+safe_387,public_web_safe,https://mzstatic.com/,safe,false,Tranco top sites
+safe_388,public_web_safe,https://inmobi.com/,safe,false,Tranco top sites
+safe_389,public_web_safe,https://jsdelivr.net/,safe,false,Tranco top sites
+safe_390,public_web_safe,https://heytapmobile.com/,safe,false,Tranco top sites
+safe_391,public_web_safe,https://capcutapi.com/,safe,false,Tranco top sites
+safe_392,public_web_safe,https://byteoversea.net/,safe,false,Tranco top sites
+safe_393,public_web_safe,https://duckdns.org/,safe,false,Tranco top sites
+safe_394,public_web_safe,https://autodesk.com/,safe,false,Tranco top sites
+safe_395,public_web_safe,https://etsy.com/,safe,false,Tranco top sites
+safe_396,public_web_safe,https://www.gov.uk/,safe,false,Tranco top sites
+safe_397,public_web_safe,https://dnsmadeeasy.com/,safe,false,Tranco top sites
+safe_398,public_web_safe,https://shalltry.com/,safe,false,Tranco top sites
+safe_399,public_web_safe,https://alibaba.com/,safe,false,Tranco top sites
+safe_400,public_web_safe,https://nature.com/,safe,false,Tranco top sites
+safe_401,public_web_safe,https://telecid.ru/,safe,false,Tranco top sites
+safe_402,public_web_safe,https://drom.ru/,safe,false,Tranco top sites
+safe_403,public_web_safe,https://googleblog.com/,safe,false,Tranco top sites
+safe_404,public_web_safe,https://appsflyer.com/,safe,false,Tranco top sites
+safe_405,public_web_safe,https://ok.ru/,safe,false,Tranco top sites
+safe_406,public_web_safe,https://harvard.edu/,safe,false,Tranco top sites
+safe_407,public_web_safe,https://samsungqbe.com/,safe,false,Tranco top sites
+safe_408,public_web_safe,https://steampowered.com/,safe,false,Tranco top sites
+safe_409,public_web_safe,https://mtgglobals.com/,safe,false,Tranco top sites
+safe_410,public_web_safe,https://media-amazon.com/,safe,false,Tranco top sites
+safe_411,public_web_safe,https://media.net/,safe,false,Tranco top sites
+safe_412,public_web_safe,https://alidns.com/,safe,false,Tranco top sites
+safe_413,public_web_safe,https://amplitude.com/,safe,false,Tranco top sites
+safe_414,public_web_safe,https://smartadserver.com/,safe,false,Tranco top sites
+safe_415,public_web_safe,https://wiley.com/,safe,false,Tranco top sites
+safe_416,public_web_safe,https://php.net/,safe,false,Tranco top sites
+safe_417,public_web_safe,https://amazon.co.uk/,safe,false,Tranco top sites
+safe_418,public_web_safe,https://nr-data.net/,safe,false,Tranco top sites
+safe_419,public_web_safe,https://myshopify.com/,safe,false,Tranco top sites
+safe_420,public_web_safe,https://clarity.ms/,safe,false,Tranco top sites
+safe_421,public_web_safe,https://launchdarkly.com/,safe,false,Tranco top sites
+safe_422,public_web_safe,https://trueconf.net/,safe,false,Tranco top sites
+safe_423,public_web_safe,https://vk.ru/,safe,false,Tranco top sites
+safe_424,public_web_safe,https://afternic.com/,safe,false,Tranco top sites
+safe_425,public_web_safe,https://weibo.com/,safe,false,Tranco top sites
+safe_426,public_web_safe,https://lsrelayaccess.com/,safe,false,Tranco top sites
+safe_427,public_web_safe,https://lencr.org/,safe,false,Tranco top sites
+safe_428,public_web_safe,https://akamaihd.net/,safe,false,Tranco top sites
+safe_429,public_web_safe,https://douyincdn.com/,safe,false,Tranco top sites
+safe_430,public_web_safe,https://edgcdn.net/,safe,false,Tranco top sites
+safe_431,public_web_safe,https://name-services.com/,safe,false,Tranco top sites
+safe_432,public_web_safe,https://ea.com/,safe,false,Tranco top sites
+safe_433,public_web_safe,https://virginm.net/,safe,false,Tranco top sites
+safe_434,public_web_safe,https://3lift.com/,safe,false,Tranco top sites
+safe_435,public_web_safe,https://issuu.com/,safe,false,Tranco top sites
+safe_436,public_web_safe,https://gnu.org/,safe,false,Tranco top sites
+safe_437,public_web_safe,https://debian.org/,safe,false,Tranco top sites
+safe_438,public_web_safe,https://crashlytics.com/,safe,false,Tranco top sites
+safe_439,public_web_safe,https://opendns.com/,safe,false,Tranco top sites
+safe_440,public_web_safe,https://checkpoint.com/,safe,false,Tranco top sites
+safe_441,public_web_safe,https://aol.com/,safe,false,Tranco top sites
+safe_442,public_web_safe,https://hcaptcha.com/,safe,false,Tranco top sites
+safe_443,public_web_safe,https://weebly.com/,safe,false,Tranco top sites
+safe_444,public_web_safe,https://inner-active.mobi/,safe,false,Tranco top sites
+safe_445,public_web_safe,https://wbx2.com/,safe,false,Tranco top sites
+safe_446,public_web_safe,https://cdnbuild.net/,safe,false,Tranco top sites
+safe_447,public_web_safe,https://openx.net/,safe,false,Tranco top sites
+safe_448,public_web_safe,https://wildberries.ru/,safe,false,Tranco top sites
+safe_449,public_web_safe,https://cdc.gov/,safe,false,Tranco top sites
+safe_450,public_web_safe,https://onelink.me/,safe,false,Tranco top sites
+safe_451,public_web_safe,https://un.org/,safe,false,Tranco top sites
+safe_452,public_web_safe,https://tbcache.com/,safe,false,Tranco top sites
+safe_453,public_web_safe,https://bilibili.com/,safe,false,Tranco top sites
+safe_454,public_web_safe,https://naver.com/,safe,false,Tranco top sites
+safe_455,public_web_safe,https://allawnos.com/,safe,false,Tranco top sites
+safe_456,public_web_safe,https://wsj.com/,safe,false,Tranco top sites
+safe_457,public_web_safe,https://rocket-cdn.com/,safe,false,Tranco top sites
+safe_458,public_web_safe,https://trustpilot.com/,safe,false,Tranco top sites
+safe_459,public_web_safe,https://yahoo.co.jp/,safe,false,Tranco top sites
+safe_460,public_web_safe,https://aliyun.com/,safe,false,Tranco top sites
+safe_461,public_web_safe,https://ezvizlife.com/,safe,false,Tranco top sites
+safe_462,public_web_safe,https://vkuser.net/,safe,false,Tranco top sites
+safe_463,public_web_safe,https://washingtonpost.com/,safe,false,Tranco top sites
+safe_464,public_web_safe,https://tradingview.com/,safe,false,Tranco top sites
+safe_465,public_web_safe,https://selectel.ru/,safe,false,Tranco top sites
+safe_466,public_web_safe,https://kaspersky-labs.com/,safe,false,Tranco top sites
+safe_467,public_web_safe,https://demdex.net/,safe,false,Tranco top sites
+safe_468,public_web_safe,https://dell.com/,safe,false,Tranco top sites
+safe_469,public_web_safe,https://quickconnect.to/,safe,false,Tranco top sites
+safe_470,public_web_safe,https://ivi.ru/,safe,false,Tranco top sites
+safe_471,public_web_safe,https://google.cn/,safe,false,Tranco top sites
+safe_472,public_web_safe,https://rzone.de/,safe,false,Tranco top sites
+safe_473,public_web_safe,https://byteglb.com/,safe,false,Tranco top sites
+safe_474,public_web_safe,https://samsungcloudsolution.com/,safe,false,Tranco top sites
+safe_475,public_web_safe,https://namebrightdns.com/,safe,false,Tranco top sites
+safe_476,public_web_safe,https://dailymail.co.uk/,safe,false,Tranco top sites
+safe_477,public_web_safe,https://bloomberg.com/,safe,false,Tranco top sites
+safe_478,public_web_safe,https://nvidia.com/,safe,false,Tranco top sites
+safe_479,public_web_safe,https://nasa.gov/,safe,false,Tranco top sites
+safe_480,public_web_safe,https://stanford.edu/,safe,false,Tranco top sites
+safe_481,public_web_safe,https://dailymotion.com/,safe,false,Tranco top sites
+safe_482,public_web_safe,https://kwai-pro.com/,safe,false,Tranco top sites
+safe_483,public_web_safe,https://enacdn.net/,safe,false,Tranco top sites
+safe_484,public_web_safe,https://plesk.com/,safe,false,Tranco top sites
+safe_485,public_web_safe,https://imcmdb.net/,safe,false,Tranco top sites
+safe_486,public_web_safe,https://temu.com/,safe,false,Tranco top sites
+safe_487,public_web_safe,https://tiktokv.us/,safe,false,Tranco top sites
+safe_488,public_web_safe,https://tp-link.com/,safe,false,Tranco top sites
+safe_489,public_web_safe,https://yandex.com/,safe,false,Tranco top sites
+safe_490,public_web_safe,https://gitlab.com/,safe,false,Tranco top sites
+safe_491,public_web_safe,https://unsplash.com/,safe,false,Tranco top sites
+safe_492,public_web_safe,https://mi.com/,safe,false,Tranco top sites
+safe_493,public_web_safe,https://vivoglobal.com/,safe,false,Tranco top sites
+safe_494,public_web_safe,https://calendly.com/,safe,false,Tranco top sites
+safe_495,public_web_safe,https://amazon.de/,safe,false,Tranco top sites
+safe_496,public_web_safe,https://heytapdl.com/,safe,false,Tranco top sites
+safe_497,public_web_safe,https://indeed.com/,safe,false,Tranco top sites
+safe_498,public_web_safe,https://ibyteimg.com/,safe,false,Tranco top sites
+safe_499,public_web_safe,https://live-video.net/,safe,false,Tranco top sites
+safe_500,public_web_safe,https://keenetic.io/,safe,false,Tranco top sites
+safe_501,public_web_safe,https://adobe.net/,safe,false,Tranco top sites
+safe_502,public_web_safe,https://globo.com/,safe,false,Tranco top sites
+safe_503,public_web_safe,https://aliyuncsslbintl.com/,safe,false,Tranco top sites
+safe_504,public_web_safe,https://edgecdn.ru/,safe,false,Tranco top sites
+safe_505,public_web_safe,https://zendesk.com/,safe,false,Tranco top sites
+safe_506,public_web_safe,https://cookiedatabase.org/,safe,false,Tranco top sites
+safe_507,public_web_safe,https://tiktokv.eu/,safe,false,Tranco top sites
+safe_508,public_web_safe,https://browser-intake-datadoghq.com/,safe,false,Tranco top sites
+safe_509,public_web_safe,https://kwaipros.com/,safe,false,Tranco top sites
+safe_510,public_web_safe,https://xcal.tv/,safe,false,Tranco top sites
+safe_511,public_web_safe,https://amagi.tv/,safe,false,Tranco top sites
+safe_512,public_web_safe,https://cnbc.com/,safe,false,Tranco top sites
+safe_513,public_web_safe,https://cloudns.net/,safe,false,Tranco top sites
+safe_514,public_web_safe,https://tiktokcdn-eu.com/,safe,false,Tranco top sites
+safe_515,public_web_safe,https://dual-s-msedge.net/,safe,false,Tranco top sites
+safe_516,public_web_safe,https://adriver.ru/,safe,false,Tranco top sites
+safe_517,public_web_safe,https://telegram.me/,safe,false,Tranco top sites
+safe_518,public_web_safe,https://businessinsider.com/,safe,false,Tranco top sites
+safe_519,public_web_safe,https://netangels.ru/,safe,false,Tranco top sites
+safe_520,public_web_safe,https://ip-api.com/,safe,false,Tranco top sites
+safe_521,public_web_safe,https://ngenix.net/,safe,false,Tranco top sites
+safe_522,public_web_safe,https://pixabay.com/,safe,false,Tranco top sites
+safe_523,public_web_safe,https://espn.com/,safe,false,Tranco top sites
+safe_524,public_web_safe,https://avcdn.net/,safe,false,Tranco top sites
+safe_525,public_web_safe,https://supercell.com/,safe,false,Tranco top sites
+safe_526,public_web_safe,https://163.com/,safe,false,Tranco top sites
+safe_527,public_web_safe,https://amazonalexa.com/,safe,false,Tranco top sites
+safe_528,public_web_safe,https://line.me/,safe,false,Tranco top sites
+safe_529,public_web_safe,https://pangle.io/,safe,false,Tranco top sites
+safe_530,public_web_safe,https://online-metrix.net/,safe,false,Tranco top sites
+safe_531,public_web_safe,https://avsxappcaptiveportal.com/,safe,false,Tranco top sites
+safe_532,public_web_safe,https://steamcommunity.com/,safe,false,Tranco top sites
+safe_533,public_web_safe,https://myhuaweicloud.com/,safe,false,Tranco top sites
+safe_534,public_web_safe,https://aliexpress.com/,safe,false,Tranco top sites
+safe_535,public_web_safe,https://taobao.com/,safe,false,Tranco top sites
+safe_536,public_web_safe,https://huawei.com/,safe,false,Tranco top sites
+safe_537,public_web_safe,https://brave.com/,safe,false,Tranco top sites
+safe_538,public_web_safe,https://sc-gw.com/,safe,false,Tranco top sites
+safe_539,public_web_safe,https://intel.com/,safe,false,Tranco top sites
+safe_540,public_web_safe,https://wp.com/,safe,false,Tranco top sites
+safe_541,public_web_safe,https://duckduckgo.com/,safe,false,Tranco top sites
+safe_542,public_web_safe,https://worldnic.com/,safe,false,Tranco top sites
+safe_543,public_web_safe,https://awswaf.com/,safe,false,Tranco top sites
+safe_544,public_web_safe,https://go.com/,safe,false,Tranco top sites
+safe_545,public_web_safe,https://amazontrust.com/,safe,false,Tranco top sites
+safe_546,public_web_safe,https://crpt.ru/,safe,false,Tranco top sites
+safe_547,public_web_safe,https://statista.com/,safe,false,Tranco top sites
+safe_548,public_web_safe,https://awsglobalaccelerator.com/,safe,false,Tranco top sites
+safe_549,public_web_safe,https://netease.com/,safe,false,Tranco top sites
+safe_550,public_web_safe,https://list-manage.com/,safe,false,Tranco top sites
+safe_551,public_web_safe,https://sohu.com/,safe,false,Tranco top sites
+safe_552,public_web_safe,https://bsky.app/,safe,false,Tranco top sites
+safe_553,public_web_safe,https://speedtest.net/,safe,false,Tranco top sites
+safe_554,public_web_safe,https://beian.gov.cn/,safe,false,Tranco top sites
+safe_555,public_web_safe,https://eventbrite.com/,safe,false,Tranco top sites
+safe_556,public_web_safe,https://mikrotik.com/,safe,false,Tranco top sites
+safe_557,public_web_safe,https://featureassets.org/,safe,false,Tranco top sites
+safe_558,public_web_safe,https://g.page/,safe,false,Tranco top sites
+safe_559,public_web_safe,https://quora.com/,safe,false,Tranco top sites
+safe_560,public_web_safe,https://mcafee.com/,safe,false,Tranco top sites
+safe_561,public_web_safe,https://duolingo.com/,safe,false,Tranco top sites
+safe_562,public_web_safe,https://nflximg.com/,safe,false,Tranco top sites
+safe_563,public_web_safe,https://gamepass.com/,safe,false,Tranco top sites
+safe_564,public_web_safe,https://ietf.org/,safe,false,Tranco top sites
+safe_565,public_web_safe,https://mynetname.net/,safe,false,Tranco top sites
+safe_566,public_web_safe,https://eye4.cn/,safe,false,Tranco top sites
+safe_567,public_web_safe,https://svc.ms/,safe,false,Tranco top sites
+safe_568,public_web_safe,https://scribd.com/,safe,false,Tranco top sites
+safe_569,public_web_safe,https://gosuslugi.ru/,safe,false,Tranco top sites
+safe_570,public_web_safe,https://pushy.io/,safe,false,Tranco top sites
+safe_571,public_web_safe,https://hostgator.com/,safe,false,Tranco top sites
+safe_572,public_web_safe,https://firetvcaptiveportal.com/,safe,false,Tranco top sites
+safe_573,public_web_safe,https://kwai.net/,safe,false,Tranco top sites
+safe_574,public_web_safe,https://arubanetworks.com/,safe,false,Tranco top sites
+safe_575,public_web_safe,https://goodreads.com/,safe,false,Tranco top sites
+safe_576,public_web_safe,https://2mdn.net/,safe,false,Tranco top sites
+safe_577,public_web_safe,https://npr.org/,safe,false,Tranco top sites
+safe_578,public_web_safe,https://addtoany.com/,safe,false,Tranco top sites
+safe_579,public_web_safe,https://mysql.com/,safe,false,Tranco top sites
+safe_580,public_web_safe,https://myqcloud.com/,safe,false,Tranco top sites
+safe_581,public_web_safe,https://sina.com.cn/,safe,false,Tranco top sites
+safe_582,public_web_safe,https://discord.media/,safe,false,Tranco top sites
+safe_583,public_web_safe,https://name.com/,safe,false,Tranco top sites
+safe_584,public_web_safe,https://tencent-cloud.net/,safe,false,Tranco top sites
+safe_585,public_web_safe,https://nstld.com/,safe,false,Tranco top sites
+safe_586,public_web_safe,https://vkontakte.ru/,safe,false,Tranco top sites
+safe_587,public_web_safe,https://mediatek.com/,safe,false,Tranco top sites
+safe_588,public_web_safe,https://walmart.com/,safe,false,Tranco top sites
+safe_589,public_web_safe,https://exp-tas.com/,safe,false,Tranco top sites
+safe_590,public_web_safe,https://paloaltonetworks.com/,safe,false,Tranco top sites
+safe_591,public_web_safe,https://amzn.to/,safe,false,Tranco top sites
+safe_592,public_web_safe,https://shein.com/,safe,false,Tranco top sites
+safe_593,public_web_safe,https://sberbank.ru/,safe,false,Tranco top sites
+safe_594,public_web_safe,https://beyondwickedmapping.org/,safe,false,Tranco top sites
+safe_595,public_web_safe,https://foxnews.com/,safe,false,Tranco top sites
+safe_596,public_web_safe,https://amazon.co.jp/,safe,false,Tranco top sites
+safe_597,public_web_safe,https://nease.net/,safe,false,Tranco top sites
+safe_598,public_web_safe,https://substack.com/,safe,false,Tranco top sites
+safe_599,public_web_safe,https://rbxcdn.com/,safe,false,Tranco top sites
+safe_600,public_web_safe,https://gandi-ns.fr/,safe,false,Tranco top sites
+safe_601,public_web_safe,https://indiatimes.com/,safe,false,Tranco top sites
+safe_602,public_web_safe,https://behance.net/,safe,false,Tranco top sites
+safe_603,public_web_safe,https://slideshare.net/,safe,false,Tranco top sites
+safe_604,public_web_safe,https://skyhigh.cloud/,safe,false,Tranco top sites
+safe_605,public_web_safe,https://google.de/,safe,false,Tranco top sites
+safe_606,public_web_safe,https://adobedtm.com/,safe,false,Tranco top sites
+safe_607,public_web_safe,https://stackoverflow.com/,safe,false,Tranco top sites
+safe_608,public_web_safe,https://t-msedge.net/,safe,false,Tranco top sites
+safe_609,public_web_safe,https://t-mobile.com/,safe,false,Tranco top sites
+safe_610,public_web_safe,https://nbcnews.com/,safe,false,Tranco top sites
+safe_611,public_web_safe,https://nflxvideo.net/,safe,false,Tranco top sites
+safe_612,public_web_safe,https://gcdn.co/,safe,false,Tranco top sites
+safe_613,public_web_safe,https://moe.video/,safe,false,Tranco top sites
+safe_614,public_web_safe,https://docker.com/,safe,false,Tranco top sites
+safe_615,public_web_safe,https://atlassian.net/,safe,false,Tranco top sites
+safe_616,public_web_safe,https://wired.com/,safe,false,Tranco top sites
+safe_617,public_web_safe,https://dnspod.net/,safe,false,Tranco top sites
+safe_618,public_web_safe,https://blogger.com/,safe,false,Tranco top sites
+safe_619,public_web_safe,https://firefox.com/,safe,false,Tranco top sites
+safe_620,public_web_safe,https://run.app/,safe,false,Tranco top sites
+safe_621,public_web_safe,https://ft.com/,safe,false,Tranco top sites
+safe_622,public_web_safe,https://elasticbeanstalk.com/,safe,false,Tranco top sites
+safe_623,public_web_safe,https://fandom.com/,safe,false,Tranco top sites
+safe_624,public_web_safe,https://cdn20.com/,safe,false,Tranco top sites
+safe_625,public_web_safe,https://geobasket.ru/,safe,false,Tranco top sites
+safe_626,public_web_safe,https://jquery.com/,safe,false,Tranco top sites
+safe_627,public_web_safe,https://xhamster.com/,safe,false,Tranco top sites
+safe_628,public_web_safe,https://dynatrace.com/,safe,false,Tranco top sites
+safe_629,public_web_safe,https://arxiv.org/,safe,false,Tranco top sites
+safe_630,public_web_safe,https://palmplaystore.com/,safe,false,Tranco top sites
+safe_631,public_web_safe,https://markmonitor.com/,safe,false,Tranco top sites
+safe_632,public_web_safe,https://360.cn/,safe,false,Tranco top sites
+safe_633,public_web_safe,https://spaceweb.pro/,safe,false,Tranco top sites
+safe_634,public_web_safe,https://time.com/,safe,false,Tranco top sites
+safe_635,public_web_safe,https://uol.com.br/,safe,false,Tranco top sites
+safe_636,public_web_safe,https://okta.com/,safe,false,Tranco top sites
+safe_637,public_web_safe,https://uk.com/,safe,false,Tranco top sites
+safe_638,public_web_safe,https://360yield.com/,safe,false,Tranco top sites
+safe_639,public_web_safe,https://cloudflareinsights.com/,safe,false,Tranco top sites
+safe_640,public_web_safe,https://vidaahub.com/,safe,false,Tranco top sites
+safe_641,public_web_safe,https://imgsmail.ru/,safe,false,Tranco top sites
+safe_642,public_web_safe,https://google.com.hk/,safe,false,Tranco top sites
+safe_643,public_web_safe,https://trendmicro.com/,safe,false,Tranco top sites
+safe_644,public_web_safe,https://giphy.com/,safe,false,Tranco top sites
+safe_645,public_web_safe,https://visualstudio.com/,safe,false,Tranco top sites
+safe_646,public_web_safe,https://2gis.com/,safe,false,Tranco top sites
+safe_647,public_web_safe,https://usatoday.com/,safe,false,Tranco top sites
+safe_648,public_web_safe,https://vedsalb.com/,safe,false,Tranco top sites
+safe_649,public_web_safe,https://capcut.com/,safe,false,Tranco top sites
+safe_650,public_web_safe,https://patreon.com/,safe,false,Tranco top sites
+safe_651,public_web_safe,https://xboxlive.com/,safe,false,Tranco top sites
+safe_652,public_web_safe,https://deviantart.com/,safe,false,Tranco top sites
+safe_653,public_web_safe,https://icloud-content.com/,safe,false,Tranco top sites
+safe_654,public_web_safe,https://live.net/,safe,false,Tranco top sites
+safe_655,public_web_safe,https://tplinkcloud.com/,safe,false,Tranco top sites
+safe_656,public_web_safe,https://volcfcdndvs.com/,safe,false,Tranco top sites
+safe_657,public_web_safe,https://wix.com/,safe,false,Tranco top sites
+safe_658,public_web_safe,https://fast.com/,safe,false,Tranco top sites
+safe_659,public_web_safe,https://eset.com/,safe,false,Tranco top sites
+safe_660,public_web_safe,https://tandfonline.com/,safe,false,Tranco top sites
+safe_661,public_web_safe,https://teamviewer.com/,safe,false,Tranco top sites
+safe_662,public_web_safe,https://atlassian.com/,safe,false,Tranco top sites
+safe_663,public_web_safe,https://rlcdn.com/,safe,false,Tranco top sites
+safe_664,public_web_safe,https://azure-dns.com/,safe,false,Tranco top sites
+safe_665,public_web_safe,https://timeweb.ru/,safe,false,Tranco top sites
+safe_666,public_web_safe,https://netflix.net/,safe,false,Tranco top sites
+safe_667,public_web_safe,https://tripadvisor.com/,safe,false,Tranco top sites
+safe_668,public_web_safe,https://oup.com/,safe,false,Tranco top sites
+safe_669,public_web_safe,https://ca.gov/,safe,false,Tranco top sites
+safe_670,public_web_safe,https://hotjar.com/,safe,false,Tranco top sites
+safe_671,public_web_safe,https://grammarly.com/,safe,false,Tranco top sites
+safe_672,public_web_safe,https://supertms.com/,safe,false,Tranco top sites
+safe_673,public_web_safe,https://easebar.com/,safe,false,Tranco top sites
+safe_674,public_web_safe,https://telegraph.co.uk/,safe,false,Tranco top sites
+safe_675,public_web_safe,https://hicloud.com/,safe,false,Tranco top sites
+safe_676,public_web_safe,https://cornell.edu/,safe,false,Tranco top sites
+safe_677,public_web_safe,https://deepl.com/,safe,false,Tranco top sites
+safe_678,public_web_safe,https://oraclecloud.com/,safe,false,Tranco top sites
+safe_679,public_web_safe,https://msidentity.com/,safe,false,Tranco top sites
+safe_680,public_web_safe,https://my.com/,safe,false,Tranco top sites
+safe_681,public_web_safe,https://surveymonkey.com/,safe,false,Tranco top sites
+safe_682,public_web_safe,https://impervadns.net/,safe,false,Tranco top sites
+safe_683,public_web_safe,https://rakuten.co.jp/,safe,false,Tranco top sites
+safe_684,public_web_safe,https://yahoodns.net/,safe,false,Tranco top sites
+safe_685,public_web_safe,https://berkeley.edu/,safe,false,Tranco top sites
+safe_686,public_web_safe,https://avito.ru/,safe,false,Tranco top sites
+safe_687,public_web_safe,https://dtkn.ru/,safe,false,Tranco top sites
+safe_688,public_web_safe,https://target.com/,safe,false,Tranco top sites
+safe_689,public_web_safe,https://a-msedge.net/,safe,false,Tranco top sites
+safe_690,public_web_safe,https://adobedc.net/,safe,false,Tranco top sites
+safe_691,public_web_safe,https://expireddomains.com/,safe,false,Tranco top sites
+safe_692,public_web_safe,https://sharethrough.com/,safe,false,Tranco top sites
+safe_693,public_web_safe,https://bidswitch.net/,safe,false,Tranco top sites
+safe_694,public_web_safe,https://samsungapps.com/,safe,false,Tranco top sites
+safe_695,public_web_safe,https://aboutads.info/,safe,false,Tranco top sites
+safe_696,public_web_safe,https://alicdn.com/,safe,false,Tranco top sites
+safe_697,public_web_safe,https://xiaomi.net/,safe,false,Tranco top sites
+safe_698,public_web_safe,https://googlezip.net/,safe,false,Tranco top sites
+safe_699,public_web_safe,https://ieee.org/,safe,false,Tranco top sites
+safe_700,public_web_safe,https://ikea.com/,safe,false,Tranco top sites
+safe_701,public_web_safe,https://playstation.com/,safe,false,Tranco top sites
+safe_702,public_web_safe,https://cdnvideo.ru/,safe,false,Tranco top sites
+safe_703,public_web_safe,https://mdpi.com/,safe,false,Tranco top sites
+safe_704,public_web_safe,https://klaviyo.com/,safe,false,Tranco top sites
+safe_705,public_web_safe,https://googletagservices.com/,safe,false,Tranco top sites
+safe_706,public_web_safe,https://britannica.com/,safe,false,Tranco top sites
+safe_707,public_web_safe,https://jotform.com/,safe,false,Tranco top sites
+safe_708,public_web_safe,https://sc-cdn.net/,safe,false,Tranco top sites
+safe_709,public_web_safe,https://digitalocean.com/,safe,false,Tranco top sites
+safe_710,public_web_safe,https://onetrust.com/,safe,false,Tranco top sites
+safe_711,public_web_safe,https://loc.gov/,safe,false,Tranco top sites
+safe_712,public_web_safe,https://accuweather.com/,safe,false,Tranco top sites
+safe_713,public_web_safe,https://licdn.com/,safe,false,Tranco top sites
+safe_714,public_web_safe,https://verisign.com/,safe,false,Tranco top sites
+safe_715,public_web_safe,https://free.fr/,safe,false,Tranco top sites
+safe_716,public_web_safe,https://ya.ru/,safe,false,Tranco top sites
+safe_717,public_web_safe,https://braze.com/,safe,false,Tranco top sites
+safe_718,public_web_safe,https://branch.io/,safe,false,Tranco top sites
+safe_719,public_web_safe,https://redhat.com/,safe,false,Tranco top sites
+safe_720,public_web_safe,https://bdydns.com/,safe,false,Tranco top sites
+safe_721,public_web_safe,https://nike.com/,safe,false,Tranco top sites
+safe_722,public_web_safe,https://squarespace.com/,safe,false,Tranco top sites
+safe_723,public_web_safe,https://nintendo.com/,safe,false,Tranco top sites
+safe_724,public_web_safe,https://fontawesome.com/,safe,false,Tranco top sites
+safe_725,public_web_safe,https://ozone.ru/,safe,false,Tranco top sites
+safe_726,public_web_safe,https://wswebcdn.com/,safe,false,Tranco top sites
+safe_727,public_web_safe,https://threads.com/,safe,false,Tranco top sites
+safe_728,public_web_safe,https://yelp.com/,safe,false,Tranco top sites
+safe_729,public_web_safe,https://amazon.fr/,safe,false,Tranco top sites
+safe_730,public_web_safe,https://ovh.net/,safe,false,Tranco top sites
+safe_731,public_web_safe,https://consultant.ru/,safe,false,Tranco top sites
+safe_732,public_web_safe,https://cbsnews.com/,safe,false,Tranco top sites
+safe_733,public_web_safe,https://independent.co.uk/,safe,false,Tranco top sites
+safe_734,public_web_safe,https://bytedns1.com/,safe,false,Tranco top sites
+safe_735,public_web_safe,https://sagepub.com/,safe,false,Tranco top sites
+safe_736,public_web_safe,https://stackadapt.com/,safe,false,Tranco top sites
+safe_737,public_web_safe,https://elpais.com/,safe,false,Tranco top sites
+safe_738,public_web_safe,https://viber.com/,safe,false,Tranco top sites
+safe_739,public_web_safe,https://dyndns.org/,safe,false,Tranco top sites
+safe_740,public_web_safe,https://cnet.com/,safe,false,Tranco top sites
+safe_741,public_web_safe,https://unesco.org/,safe,false,Tranco top sites
+safe_742,public_web_safe,https://outbrain.com/,safe,false,Tranco top sites
+safe_743,public_web_safe,https://force.com/,safe,false,Tranco top sites
+safe_744,public_web_safe,https://amazon.ca/,safe,false,Tranco top sites
+safe_745,public_web_safe,https://techcrunch.com/,safe,false,Tranco top sites
+safe_746,public_web_safe,https://cookielaw.org/,safe,false,Tranco top sites
+safe_747,public_web_safe,https://withgoogle.com/,safe,false,Tranco top sites
+safe_748,public_web_safe,https://bunnyinfra.net/,safe,false,Tranco top sites
+safe_749,public_web_safe,https://imgur.com/,safe,false,Tranco top sites
+safe_750,public_web_safe,https://conviva.com/,safe,false,Tranco top sites
+safe_751,public_web_safe,https://intercom.io/,safe,false,Tranco top sites
+safe_752,public_web_safe,https://bx-msedge.net/,safe,false,Tranco top sites
+safe_753,public_web_safe,https://ioref.io/,safe,false,Tranco top sites
+safe_754,public_web_safe,https://noaa.gov/,safe,false,Tranco top sites
+safe_755,public_web_safe,https://service.gov.uk/,safe,false,Tranco top sites
+safe_756,public_web_safe,https://typekit.net/,safe,false,Tranco top sites
+safe_757,public_web_safe,https://cambridge.org/,safe,false,Tranco top sites
+safe_758,public_web_safe,https://ups.com/,safe,false,Tranco top sites
+safe_759,public_web_safe,https://e2ro.com/,safe,false,Tranco top sites
+safe_760,public_web_safe,https://g.co/,safe,false,Tranco top sites
+safe_761,public_web_safe,https://dotomi.com/,safe,false,Tranco top sites
+safe_762,public_web_safe,https://quantserve.com/,safe,false,Tranco top sites
+safe_763,public_web_safe,https://pinimg.com/,safe,false,Tranco top sites
+safe_764,public_web_safe,https://scdn.co/,safe,false,Tranco top sites
+safe_765,public_web_safe,https://wps.com/,safe,false,Tranco top sites
+safe_766,public_web_safe,https://tencent.com/,safe,false,Tranco top sites
+safe_767,public_web_safe,https://agkn.com/,safe,false,Tranco top sites
+safe_768,public_web_safe,https://mailchimp.com/,safe,false,Tranco top sites
+safe_769,public_web_safe,https://dreamhost.com/,safe,false,Tranco top sites
+safe_770,public_web_safe,https://optimizely.com/,safe,false,Tranco top sites
+safe_771,public_web_safe,https://1rx.io/,safe,false,Tranco top sites
+safe_772,public_web_safe,https://id5-sync.com/,safe,false,Tranco top sites
+safe_773,public_web_safe,https://nic.network/,safe,false,Tranco top sites
+safe_774,public_web_safe,https://twimg.com/,safe,false,Tranco top sites
+safe_775,public_web_safe,https://bluehost.com/,safe,false,Tranco top sites
+safe_776,public_web_safe,https://ted.com/,safe,false,Tranco top sites
+safe_777,public_web_safe,https://on.aws/,safe,false,Tranco top sites
+safe_778,public_web_safe,https://zdnscloud.cn/,safe,false,Tranco top sites
+safe_779,public_web_safe,https://fb.com/,safe,false,Tranco top sites
+safe_780,public_web_safe,https://lemonde.fr/,safe,false,Tranco top sites
+safe_781,public_web_safe,https://spiegel.de/,safe,false,Tranco top sites
+safe_782,public_web_safe,https://ui-dns.com/,safe,false,Tranco top sites
+safe_783,public_web_safe,https://anydesk.com/,safe,false,Tranco top sites
+safe_784,public_web_safe,https://merriam-webster.com/,safe,false,Tranco top sites
+safe_785,public_web_safe,https://ln-msedge.net/,safe,false,Tranco top sites
+safe_786,public_web_safe,https://att.net/,safe,false,Tranco top sites
+safe_787,public_web_safe,https://crwdcntrl.net/,safe,false,Tranco top sites
+safe_788,public_web_safe,https://resolver.arpa/,safe,false,Tranco top sites
+safe_789,public_web_safe,https://bitrix24.ru/,safe,false,Tranco top sites
+safe_790,public_web_safe,https://rackspace.net/,safe,false,Tranco top sites
+safe_791,public_web_safe,https://smaato.net/,safe,false,Tranco top sites
+safe_792,public_web_safe,https://yieldmo.com/,safe,false,Tranco top sites
+safe_793,public_web_safe,https://lijit.com/,safe,false,Tranco top sites
+safe_794,public_web_safe,https://hihonorcloud.com/,safe,false,Tranco top sites
+safe_795,public_web_safe,https://irs.gov/,safe,false,Tranco top sites
+safe_796,public_web_safe,https://comcast.com/,safe,false,Tranco top sites
+safe_797,public_web_safe,https://amazon.in/,safe,false,Tranco top sites
+safe_798,public_web_safe,https://samsungacr.com/,safe,false,Tranco top sites
+safe_799,public_web_safe,https://ks-cdn.com/,safe,false,Tranco top sites
+safe_800,public_web_safe,https://creativecdn.com/,safe,false,Tranco top sites
+safe_801,public_web_safe,https://b-msedge.net/,safe,false,Tranco top sites
+safe_802,public_web_safe,https://telephony.goog/,safe,false,Tranco top sites
+safe_803,public_web_safe,https://rt.ru/,safe,false,Tranco top sites
+safe_804,public_web_safe,https://google.co.uk/,safe,false,Tranco top sites
+safe_805,public_web_safe,https://watchlist-internet.at/,safe,false,Tranco top sites
+safe_806,public_web_safe,https://qlivecdn.com/,safe,false,Tranco top sites
+safe_807,public_web_safe,https://ovscdns.com/,safe,false,Tranco top sites
+safe_808,public_web_safe,https://safebrowsing.apple/,safe,false,Tranco top sites
+safe_809,public_web_safe,https://cursor.sh/,safe,false,Tranco top sites
+safe_810,public_web_safe,https://bidr.io/,safe,false,Tranco top sites
+safe_811,public_web_safe,https://abovedomains.com/,safe,false,Tranco top sites
+safe_812,public_web_safe,https://asus.com/,safe,false,Tranco top sites
+safe_813,public_web_safe,https://afilias-nst.info/,safe,false,Tranco top sites
+safe_814,public_web_safe,https://mediafire.com/,safe,false,Tranco top sites
+safe_815,public_web_safe,https://internetwarriors.net/,safe,false,Tranco top sites
+safe_816,public_web_safe,https://360safe.com/,safe,false,Tranco top sites
+safe_817,public_web_safe,https://newrelic.com/,safe,false,Tranco top sites
+safe_818,public_web_safe,https://mega.co.nz/,safe,false,Tranco top sites
+safe_819,public_web_safe,https://dbankcloud.com/,safe,false,Tranco top sites
+safe_820,public_web_safe,https://criteo.net/,safe,false,Tranco top sites
+safe_821,public_web_safe,https://allaboutcookies.org/,safe,false,Tranco top sites
+safe_822,public_web_safe,https://box.com/,safe,false,Tranco top sites
+safe_823,public_web_safe,https://bamgrid.com/,safe,false,Tranco top sites
+safe_824,public_web_safe,https://amazon.es/,safe,false,Tranco top sites
+safe_825,public_web_safe,https://mhverifier.ru/,safe,false,Tranco top sites
+safe_826,public_web_safe,https://seznam.cz/,safe,false,Tranco top sites
+safe_827,public_web_safe,https://shopee.co.id/,safe,false,Tranco top sites
+safe_828,public_web_safe,https://chinamobile.com/,safe,false,Tranco top sites
+safe_829,public_web_safe,https://stripchat.com/,safe,false,Tranco top sites
+safe_830,public_web_safe,https://bugsnag.com/,safe,false,Tranco top sites
+safe_831,public_web_safe,https://hath.network/,safe,false,Tranco top sites
+safe_832,public_web_safe,https://whecloud.com/,safe,false,Tranco top sites
+safe_833,public_web_safe,https://alipaydns.com/,safe,false,Tranco top sites
+safe_834,public_web_safe,https://it.com/,safe,false,Tranco top sites
+safe_835,public_web_safe,https://homedepot.com/,safe,false,Tranco top sites
+safe_836,public_web_safe,https://anthropic.com/,safe,false,Tranco top sites
+safe_837,public_web_safe,https://everesttech.net/,safe,false,Tranco top sites
+safe_838,public_web_safe,https://amazon.it/,safe,false,Tranco top sites
+safe_839,public_web_safe,https://sophos.com/,safe,false,Tranco top sites
+safe_840,public_web_safe,https://networkadvertising.org/,safe,false,Tranco top sites
+safe_841,public_web_safe,https://githubusercontent.com/,safe,false,Tranco top sites
+safe_842,public_web_safe,https://marriott.com/,safe,false,Tranco top sites
+safe_843,public_web_safe,https://steamstatic.com/,safe,false,Tranco top sites
+safe_844,public_web_safe,https://adform.net/,safe,false,Tranco top sites
+safe_845,public_web_safe,https://google.com.br/,safe,false,Tranco top sites
+safe_846,public_web_safe,https://iso.org/,safe,false,Tranco top sites
+safe_847,public_web_safe,https://jetbrains.com/,safe,false,Tranco top sites
+safe_848,public_web_safe,https://imrworldwide.com/,safe,false,Tranco top sites
+safe_849,public_web_safe,https://cmediahub.ru/,safe,false,Tranco top sites
+safe_850,public_web_safe,https://zillow.com/,safe,false,Tranco top sites
+safe_851,public_web_safe,https://mckinsey.com/,safe,false,Tranco top sites
+safe_852,public_web_safe,https://bandcamp.com/,safe,false,Tranco top sites
+safe_853,public_web_safe,https://claude.ai/,safe,false,Tranco top sites
+safe_854,public_web_safe,https://mercadolivre.com.br/,safe,false,Tranco top sites
+safe_855,public_web_safe,https://datadoghq.com/,safe,false,Tranco top sites
+safe_856,public_web_safe,https://tapad.com/,safe,false,Tranco top sites
+safe_857,public_web_safe,https://aiv-delivery.net/,safe,false,Tranco top sites
+safe_858,public_web_safe,https://python.org/,safe,false,Tranco top sites
+safe_859,public_web_safe,https://ring.com/,safe,false,Tranco top sites
+safe_860,public_web_safe,https://wattpad.com/,safe,false,Tranco top sites
+safe_861,public_web_safe,https://teads.tv/,safe,false,Tranco top sites
+safe_862,public_web_safe,https://nel.goog/,safe,false,Tranco top sites
+safe_863,public_web_safe,https://myspace.com/,safe,false,Tranco top sites
+safe_864,public_web_safe,https://liadm.com/,safe,false,Tranco top sites
+safe_865,public_web_safe,https://appcenter.ms/,safe,false,Tranco top sites
+safe_866,public_web_safe,https://uber.com/,safe,false,Tranco top sites
+safe_867,public_web_safe,https://bytefcdn-ttpus.com/,safe,false,Tranco top sites
+safe_868,public_web_safe,https://gumgum.com/,safe,false,Tranco top sites
+safe_869,public_web_safe,https://fda.gov/,safe,false,Tranco top sites
+safe_870,public_web_safe,https://prnewswire.com/,safe,false,Tranco top sites
+safe_871,public_web_safe,https://cdn-vk.ru/,safe,false,Tranco top sites
+safe_872,public_web_safe,https://perplexity.ai/,safe,false,Tranco top sites
+safe_873,public_web_safe,https://mlb.com/,safe,false,Tranco top sites
+safe_874,public_web_safe,https://nikkei.com/,safe,false,Tranco top sites
+safe_875,public_web_safe,https://wb.ru/,safe,false,Tranco top sites
+safe_876,public_web_safe,https://share.google/,safe,false,Tranco top sites
+safe_877,public_web_safe,https://fiverr.com/,safe,false,Tranco top sites
+safe_878,public_web_safe,https://allegro.pl/,safe,false,Tranco top sites
+safe_879,public_web_safe,https://grammarly.io/,safe,false,Tranco top sites
+safe_880,public_web_safe,https://people.com/,safe,false,Tranco top sites
+safe_881,public_web_safe,https://theverge.com/,safe,false,Tranco top sites
+safe_882,public_web_safe,https://zoom.com/,safe,false,Tranco top sites
+safe_883,public_web_safe,https://ys7.com/,safe,false,Tranco top sites
+safe_884,public_web_safe,https://hbr.org/,safe,false,Tranco top sites
+safe_885,public_web_safe,https://appspot.com/,safe,false,Tranco top sites
+safe_886,public_web_safe,https://washington.edu/,safe,false,Tranco top sites
+safe_887,public_web_safe,https://turn.com/,safe,false,Tranco top sites
+safe_888,public_web_safe,https://a-mo.net/,safe,false,Tranco top sites
+safe_889,public_web_safe,https://ameblo.jp/,safe,false,Tranco top sites
+safe_890,public_web_safe,https://sedo.com/,safe,false,Tranco top sites
+safe_891,public_web_safe,https://globalsign.com/,safe,false,Tranco top sites
+safe_892,public_web_safe,https://dotaplabs.net/,safe,false,Tranco top sites
+safe_893,public_web_safe,https://shopee.com.br/,safe,false,Tranco top sites
+safe_894,public_web_safe,https://openstreetmap.org/,safe,false,Tranco top sites
+safe_895,public_web_safe,https://33across.com/,safe,false,Tranco top sites
+safe_896,public_web_safe,https://freepik.com/,safe,false,Tranco top sites
+safe_897,public_web_safe,https://hostgator.com.br/,safe,false,Tranco top sites
+safe_898,public_web_safe,https://afilias-nst.org/,safe,false,Tranco top sites
+safe_899,public_web_safe,https://dbankcloud.ru/,safe,false,Tranco top sites
+safe_900,public_web_safe,https://no-ip.com/,safe,false,Tranco top sites
+safe_901,public_web_safe,https://unpkg.com/,safe,false,Tranco top sites
+safe_902,public_web_safe,https://moloco.com/,safe,false,Tranco top sites
+safe_903,public_web_safe,https://primevideo.com/,safe,false,Tranco top sites
+safe_904,public_web_safe,https://blackberry.com/,safe,false,Tranco top sites
+safe_905,public_web_safe,https://welt.de/,safe,false,Tranco top sites
+safe_906,public_web_safe,https://bild.de/,safe,false,Tranco top sites
+safe_907,public_web_safe,https://shopeemobile.com/,safe,false,Tranco top sites
+safe_908,public_web_safe,https://rakuten.com/,safe,false,Tranco top sites
+safe_909,public_web_safe,https://ddnss.de/,safe,false,Tranco top sites
+safe_910,public_web_safe,https://ci-servers.net/,safe,false,Tranco top sites
+safe_911,public_web_safe,https://yandexcloud.net/,safe,false,Tranco top sites
+safe_912,public_web_safe,https://adjust.com/,safe,false,Tranco top sites
+safe_913,public_web_safe,https://mixpanel.com/,safe,false,Tranco top sites
+safe_914,public_web_safe,https://lgtvcommon.com/,safe,false,Tranco top sites
+safe_915,public_web_safe,https://disneyplus.com/,safe,false,Tranco top sites
+safe_916,public_web_safe,https://liftoff.io/,safe,false,Tranco top sites
+safe_917,public_web_safe,https://ci-servers.org/,safe,false,Tranco top sites
+safe_918,public_web_safe,https://nmrodam.com/,safe,false,Tranco top sites
+safe_919,public_web_safe,https://adguard-vpn.online/,safe,false,Tranco top sites
+safe_920,public_web_safe,https://lenovo.com/,safe,false,Tranco top sites
+safe_921,public_web_safe,https://wp.pl/,safe,false,Tranco top sites
+safe_922,public_web_safe,https://squarespacedns.com/,safe,false,Tranco top sites
+safe_923,public_web_safe,https://cdnhwc1.com/,safe,false,Tranco top sites
+safe_924,public_web_safe,https://mayoclinic.org/,safe,false,Tranco top sites
+safe_925,public_web_safe,https://disqus.com/,safe,false,Tranco top sites
+safe_926,public_web_safe,https://cloudinary.com/,safe,false,Tranco top sites
+safe_927,public_web_safe,https://wpguardian.com/,safe,false,Tranco top sites
+safe_928,public_web_safe,https://herokudns.com/,safe,false,Tranco top sites
+safe_929,public_web_safe,https://usgovcloudapi.net/,safe,false,Tranco top sites
+safe_930,public_web_safe,https://otto.de/,safe,false,Tranco top sites
+safe_931,public_web_safe,https://erome.com/,safe,false,Tranco top sites
+safe_932,public_web_safe,https://lefigaro.fr/,safe,false,Tranco top sites
+safe_933,public_web_safe,https://wpguardian.io/,safe,false,Tranco top sites
+safe_934,public_web_safe,https://livejournal.com/,safe,false,Tranco top sites
+safe_935,public_web_safe,https://kick.com/,safe,false,Tranco top sites
+safe_936,public_web_safe,https://usps.com/,safe,false,Tranco top sites
+safe_937,public_web_safe,https://academia.edu/,safe,false,Tranco top sites
+safe_938,public_web_safe,https://discordapp.com/,safe,false,Tranco top sites
+safe_939,public_web_safe,https://onetag-sys.com/,safe,false,Tranco top sites
+safe_940,public_web_safe,https://vivo.com.cn/,safe,false,Tranco top sites
+safe_941,public_web_safe,https://fwmrm.net/,safe,false,Tranco top sites
+safe_942,public_web_safe,https://pexels.com/,safe,false,Tranco top sites
+safe_943,public_web_safe,https://yellowblue.io/,safe,false,Tranco top sites
+safe_944,public_web_safe,https://adgrx.com/,safe,false,Tranco top sites
+safe_945,public_web_safe,https://deepseek.com/,safe,false,Tranco top sites
+safe_946,public_web_safe,https://onlyfans.com/,safe,false,Tranco top sites
+safe_947,public_web_safe,https://ssl-images-amazon.com/,safe,false,Tranco top sites
+safe_948,public_web_safe,https://figma.com/,safe,false,Tranco top sites
+safe_949,public_web_safe,https://kunluncan.com/,safe,false,Tranco top sites
+safe_950,public_web_safe,https://recaptcha.net/,safe,false,Tranco top sites
+safe_951,public_web_safe,https://pornhub.com/,safe,false,Tranco top sites
+safe_952,public_web_safe,https://herokuapp.com/,safe,false,Tranco top sites
+safe_953,public_web_safe,https://me.com/,safe,false,Tranco top sites
+safe_954,public_web_safe,https://discogs.com/,safe,false,Tranco top sites
+safe_955,public_web_safe,https://latimes.com/,safe,false,Tranco top sites
+safe_956,public_web_safe,https://investopedia.com/,safe,false,Tranco top sites
+safe_957,public_web_safe,https://thenai.org/,safe,false,Tranco top sites
+safe_958,public_web_safe,https://zoho.com/,safe,false,Tranco top sites
+safe_959,public_web_safe,https://ebay.co.uk/,safe,false,Tranco top sites
+safe_960,public_web_safe,https://ipinfo.io/,safe,false,Tranco top sites
+safe_961,public_web_safe,https://news.com.au/,safe,false,Tranco top sites
+safe_962,public_web_safe,https://spotifycdn.com/,safe,false,Tranco top sites
+safe_963,public_web_safe,https://focus.de/,safe,false,Tranco top sites
+safe_964,public_web_safe,https://kontur.ru/,safe,false,Tranco top sites
+safe_965,public_web_safe,https://goskope.com/,safe,false,Tranco top sites
+safe_966,public_web_safe,https://princeton.edu/,safe,false,Tranco top sites
+safe_967,public_web_safe,https://agoda.com/,safe,false,Tranco top sites
+safe_968,public_web_safe,https://chess.com/,safe,false,Tranco top sites
+safe_969,public_web_safe,https://miwifi.com/,safe,false,Tranco top sites
+safe_970,public_web_safe,https://daum.net/,safe,false,Tranco top sites
+safe_971,public_web_safe,https://change.org/,safe,false,Tranco top sites
+safe_972,public_web_safe,https://usda.gov/,safe,false,Tranco top sites
+safe_973,public_web_safe,https://msftauth.net/,safe,false,Tranco top sites
+safe_974,public_web_safe,https://synology.com/,safe,false,Tranco top sites
+safe_975,public_web_safe,https://webmd.com/,safe,false,Tranco top sites
+safe_976,public_web_safe,https://ndtv.com/,safe,false,Tranco top sites
+safe_977,public_web_safe,https://zhihu.com/,safe,false,Tranco top sites
+safe_978,public_web_safe,https://qualtrics.com/,safe,false,Tranco top sites
+safe_979,public_web_safe,https://xvideos.com/,safe,false,Tranco top sites
+safe_980,public_web_safe,https://frontiersin.org/,safe,false,Tranco top sites
+safe_981,public_web_safe,https://biblegateway.com/,safe,false,Tranco top sites
+safe_982,public_web_safe,https://ebay.de/,safe,false,Tranco top sites
+safe_983,public_web_safe,https://smartthings.com/,safe,false,Tranco top sites
+safe_984,public_web_safe,https://tplinknbu.com/,safe,false,Tranco top sites
+safe_985,public_web_safe,https://akahost.net/,safe,false,Tranco top sites
+safe_986,public_web_safe,https://wbbasket.ru/,safe,false,Tranco top sites
+safe_987,public_web_safe,https://amazon.com.br/,safe,false,Tranco top sites
+safe_988,public_web_safe,https://eu-1-id5-sync.com/,safe,false,Tranco top sites
+safe_989,public_web_safe,https://themeforest.net/,safe,false,Tranco top sites
+safe_990,public_web_safe,https://arcgis.com/,safe,false,Tranco top sites
+safe_991,public_web_safe,https://zenecn.net/,safe,false,Tranco top sites
+safe_992,public_web_safe,https://life360.com/,safe,false,Tranco top sites
+safe_993,public_web_safe,https://healthline.com/,safe,false,Tranco top sites
+safe_994,public_web_safe,https://hm.com/,safe,false,Tranco top sites
+safe_995,public_web_safe,https://worldbank.org/,safe,false,Tranco top sites
+safe_996,public_web_safe,https://fbsbx.com/,safe,false,Tranco top sites
+safe_997,public_web_safe,https://bankofamerica.com/,safe,false,Tranco top sites
+safe_998,public_web_safe,https://deloitte.com/,safe,false,Tranco top sites
+safe_999,public_web_safe,https://flashtalking.com/,safe,false,Tranco top sites
+openphish_001,openphish_malicious,http://www.gov-parkingsii.cyou/com,malicious,true,OpenPhish
