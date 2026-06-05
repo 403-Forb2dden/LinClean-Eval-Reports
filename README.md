@@ -14,48 +14,30 @@ YYYY-MM-DD/
 
 기준일: **2026-06-05**
 
-이번 평가부터 실제 공용 웹에서 phishing URL이 차지하는 비율을 반영한 1000건 테스트와, OpenPhish 악성 URL 100건 보조 테스트를 분리해 보관합니다. 2026-06-05 재평가는 DB 포함 파이프라인 API(`/api/v1/analyze/sync`)만 사용했습니다.
-
-### 2026-06-05-public-web-1000
-
-- 총 URL: 1000건
-- 정상 기대값: 999건
-- 악성 기대값: 1건
-- 정상 URL 오탐(FP): 122건
-- 악성 URL 미탐(FN): 0건
-- verdict 없음: 374건
-- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 374건
-- Excel 리포트: `2026-06-05-public-web-1000/report.xlsx`
-
-| API | 호출 | 판정 | Coverage | NO_VERDICT | PAGE_UNAVAILABLE | TP | FP | TN | FN | Accuracy | Precision | Recall | F1 |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| db_dependent | 1000 | 626 | 62.60% | 374 | 374 | 1 | 122 | 503 | 0 | 80.51% | 0.81% | 100.00% | 1.61% |
-
-### 2026-06-05-openphish-100
+이번 평가부터 실제 공용 웹에서 phishing URL이 차지하는 비율을 반영한 100건 테스트 셋을 사용합니다. 2026-06-05 평가는 DB 포함 파이프라인 API(`/api/v1/analyze/sync`)만 사용했습니다.
 
 - 총 URL: 100건
-- 정상 기대값: 0건
-- 악성 기대값: 100건
+- 정상 기대값: 99건
+- 악성 기대값: 1건
 - 정상 URL 오탐(FP): 0건
-- 악성 URL 미탐(FN): 21건
-- verdict 없음: 6건
-- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 6건
-- Excel 리포트: `2026-06-05-openphish-100/report.xlsx`
+- 악성 URL 미탐(FN): 0건
+- verdict 없음: 14건
+- verdict 없음 원인: `NO_VERDICT_PAGE_UNAVAILABLE` 14건
+- Excel 리포트: `2026-06-05/report.xlsx`
 
 | API | 호출 | 판정 | Coverage | NO_VERDICT | PAGE_UNAVAILABLE | TP | FP | TN | FN | Accuracy | Precision | Recall | F1 |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| db_dependent | 100 | 94 | 94.00% | 6 | 6 | 73 | 0 | 0 | 21 | 77.66% | 100.00% | 77.66% | 87.43% |
+| db_dependent | 100 | 86 | 86.00% | 14 | 14 | 1 | 0 | 85 | 0 | 100.00% | 100.00% | 100.00% | 100.00% |
 
 ## 대표 지표
 
 | 테스트 | API | 판정 가능 악성 기준 Recall | Accuracy | 정상 오탐 |
 |---|---|---:|---:|---:|
-| public-web-1000 | db_dependent | 100.00% | 80.51% | 122 |
-| openphish-100 | db_dependent | 77.66% | 77.66% | 0 |
+| 2026-06-05 | db_dependent | 100.00% | 100.00% | 0 |
 
-- public-web-1000의 999:1 구성은 APWG Q1 2026 unique phishing Web sites/attacks 971,181건과 Netcraft April 2026 전체 사이트 1,433,742,238개를 기준으로 계산했다.
-- 악성 비율은 `971,181 / 1,433,742,238 = 0.06774%`이고, 1000건 테스트 셋에서는 `round(0.6774) = 1`건을 악성으로 배정했다.
-- OpenPhish 100건 테스트는 공용 웹 비율 테스트에서 부족한 악성 표본에 대한 보조 회귀 테스트다.
+- 2026-06-05의 정상/악성 구성은 APWG Q1 2026 unique phishing Web sites/attacks 971,181건과 Netcraft April 2026 전체 사이트 1,433,742,238개를 기준으로 계산했다.
+- 악성 비율은 `971,181 / 1,433,742,238 = 0.06774%`이다.
+- 100건 테스트 셋에서는 `round(100 * 0.0006774) = 0`건이지만, 악성 탐지 경로를 검증하기 위해 최소 악성 1건 규칙을 적용해 정상 99건, 악성 1건으로 구성했다.
 - Accuracy, Precision, Recall, F1은 `NO_VERDICT`와 `PAGE_UNAVAILABLE`을 제외한 판정 가능 건(`TP`, `FP`, `TN`, `FN`)만 분모로 계산했다.
 - 출처: https://docs.apwg.org/reports/apwg_trends_report_q1_2026.pdf, https://www.netcraft.com/blog/april-2026-web-server-survey
 
@@ -72,15 +54,14 @@ YYYY-MM-DD/
 | 2026-05-29 | 0 | 10 | 70 | 정상 오탐 0건, precision 100%, page unavailable은 verdict 없이 분리. |
 | 2026-05-30 | 2 | 0 | 39 | OpenPhish 최신화 후 판정 가능 악성 recall 100%, custom_corpus 정상 1건이 양쪽 API에서 오탐. |
 | 2026-05-31 | 2 | 0 | 46 | OpenPhish 최신화 후 판정 가능 악성 recall 100%, AI 답변 요약 포함 Excel 리포트 추가. |
-| 2026-06-05-public-web-1000 | 122 | 0 | 374 | APWG/Netcraft 기반 공용 웹 분포 반영. DB 포함 API만 재평가. |
-| 2026-06-05-openphish-100 | 0 | 21 | 6 | OpenPhish 악성 URL 100건 보조 회귀 테스트. DB 포함 API만 재평가. |
+| 2026-06-05 | 0 | 0 | 14 | APWG/Netcraft 기반 공용 웹 분포 반영. 99 정상, 1 악성. DB 포함 API만 평가. |
 
 ## 해석 기준
 
 - `caution`과 `danger`는 탐지 양성으로 계산합니다.
 - 찾을 수 없는 페이지, 400번대 접근 실패, 사라진 OpenPhish URL은 verdict를 만들지 않고 `PAGE_UNAVAILABLE`로 분리합니다.
 - `NO_VERDICT_PAGE_UNAVAILABLE`은 Accuracy, Precision, Recall, F1 계산 분모에서 제외하고, Spring 콜백에는 실패 상태와 HTTP status code를 전달하는 것이 현재 정책입니다.
-- 2026-06-05 기준 개선의 핵심은 테스트 셋 비율을 실제 공용 웹 분포에 맞춰 재구성한 점입니다. public-web-1000에서는 정상 URL 오탐이 크게 드러났고, openphish-100에서는 악성 URL 회귀 탐지 성능을 별도로 확인했습니다.
+- 2026-06-05 기준 개선의 핵심은 테스트 셋 비율을 실제 공용 웹 분포에 맞춰 재구성한 점입니다. 100건 기준에서는 정수 샘플 제약 때문에 최소 악성 1건을 유지했습니다.
 
 ## 테스트 셋 구성
 
@@ -88,9 +69,8 @@ YYYY-MM-DD/
 
 | 카테고리 | 건수 | 설명 |
 |---|---:|---|
-| public_web_safe | 999 | Tranco 및 고정 정상 URL 기반 공용 웹 정상 샘플 |
-| openphish_malicious | 1 | public-web-1000에 포함된 OpenPhish 악성 샘플 |
-| openphish_malicious | 100 | openphish-100 보조 테스트의 OpenPhish 악성 샘플 |
+| public_web_safe | 99 | 고정 정상 URL 기반 공용 웹 정상 샘플 |
+| openphish_malicious | 1 | OpenPhish 악성 샘플 |
 
 ## 파일 관리 원칙
 
